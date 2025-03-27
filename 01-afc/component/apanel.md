@@ -1,6 +1,6 @@
 # APanel
 
-> **Extends**: [AContainer](https://wikidocs.net/274983)
+> **Extends**: AContainer
 
 APanel은 AContainer를 확장한 클래스로, 주로 레이아웃을 분할하는 데 사용
 
@@ -14,8 +14,7 @@ APanel은 AContainer를 확장한 클래스로, 주로 레이아웃을 분할하
 
 APanel의 초기화 메서드로, AContainer의 init 메서드를 호출하여 초기화 과정을 수행.
 
-**context** `<String>`: 컴포넌트 생성 정보\
-
+**context** `<String>`: 컴포넌트 생성 정보
 
 > 이 정보는 컴포넌트의 초기 설정을 위한 데이터로 사용
 

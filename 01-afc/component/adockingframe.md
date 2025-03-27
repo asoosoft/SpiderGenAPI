@@ -1,4 +1,4 @@
-# ADockingFrame( containerId )
+# ADockingFrame
 
 > **Extends**: AFrameWnd
 
@@ -14,7 +14,6 @@
 
 도킹될 때 설정되며, 기본값은 **null**
 
-\
 
 
 ### lastDockedCntr `<ADockablePanel>`
@@ -23,7 +22,6 @@
 
 도킹될 때 설정되며, 기본값은 **null**
 
-\
 
 
 ### titleHeight `<Number>`
@@ -43,7 +41,6 @@
 * **?frmId** `<String>` 프레임 아이디
 * **Returns** `<Object>` 위치 정보 객체 또는 모든 위치 정보 객체
 
-\
 
 
 ### ADockingFrame.getPosValue( frmId, key )

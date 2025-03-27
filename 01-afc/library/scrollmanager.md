@@ -4,9 +4,6 @@
 
 > 스크롤 이벤트를 감지하고, 스크롤 속도를 조정하며, 자동 스크롤 애니메이션을 처리.
 
-\
-
-
 ## Class Variables
 
 ### scrlTimer `<Number | null>`
@@ -87,9 +84,6 @@ scrollManager.setOption({ moveDelay: 30 }); // 더 빠르게 반응
 scrollManager.setOption({ moveDelay: 60 }); // 더 둔하게 반응   
 ```
 
-\
-
-
 ## Instance Methods
 
 ### addDisableManager( manager )
@@ -102,9 +96,6 @@ scrollManager.setOption({ moveDelay: 60 }); // 더 둔하게 반응
 scrollManager.addDisableManager(otherScrollManager);
 ```
 
-\
-
-
 ### enableScroll( enable )
 
 스크롤을 활성화/비활성화.
@@ -114,9 +105,6 @@ scrollManager.addDisableManager(otherScrollManager);
 ```js
 scrollManager.enableScroll(false); // 스크롤 비활성화
 ```
-
-\
-
 
 ### initScroll( pos )
 
@@ -128,9 +116,6 @@ scrollManager.enableScroll(false); // 스크롤 비활성화
 scrollManager.initScroll(0);
 ```
 
-\
-
-
 ### removeAllDisableManager()
 
 모든 **ScrollManager**를 해제.
@@ -138,9 +123,6 @@ scrollManager.initScroll(0);
 ```js
 scrollManager.removeAllDisableManager();
 ```
-
-\
-
 
 ### removeDisableManager( manager )
 
@@ -151,9 +133,6 @@ scrollManager.removeAllDisableManager();
 ```js
 scrollManager.removeDisableManager(otherScrollManager);
 ```
-
-\
-
 
 ### scrollCheck( pos, scrollFunc )
 
@@ -181,9 +160,6 @@ scrollManager.autoScroll(0.1, (move, velocity) =>
 );
 ```
 
-\
-
-
 ### setOption( option )
 
 스크롤 이동 감도를 설정.
@@ -195,9 +171,6 @@ scrollManager.autoScroll(0.1, (move, velocity) =>
 | `scrollAmount`    | 스크롤 이동 수치. (값이 작아질 수록 미세하기 움직이며 이동량이 작아짐. 기본값 50)     |
 | `velocityRatio`   | 스크롤 속도를 감속시킬 비율. (비율이 커질수록 최초 스크롤속도가 빨리 감속. 기본값 0.02) |
 
-\
-
-
 ### stopScrollTimer()
 
 스크롤 타이머를 중지.
@@ -205,9 +178,6 @@ scrollManager.autoScroll(0.1, (move, velocity) =>
 ```js
 scrollManager.stopScrollTimer();
 ```
-
-\
-
 
 ### setStopCallback( callback )
 
@@ -223,9 +193,6 @@ scrollManager.setStopCallback(() =>
 );
 ```
 
-\
-
-
 ### updateScroll( pos, updateFunc )
 
 스크롤 위치를 업데이트하고 이동량을 계산.
@@ -238,5 +205,3 @@ scrollManager.updateScroll(100, (move) =>
 	 console.log("이동 거리:", move)
 );
 ```
-
-\

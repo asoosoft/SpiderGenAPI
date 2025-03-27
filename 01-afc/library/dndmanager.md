@@ -18,9 +18,6 @@ new DnDManager(dndId)
 
 ***
 
-\
-
-
 ## Instance Variables
 
 ### dndId `<String>`
@@ -76,9 +73,6 @@ dropOption = {
 현재 드래그 중인 요소들을 관리하는 배열
 
 ***
-
-\
-
 
 ## Instance Methods
 
@@ -214,9 +208,6 @@ dndManager.regDrop(element, {
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

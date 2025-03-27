@@ -1,6 +1,6 @@
 # ATextBox
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **ATextBox**는 **텍스트 입력 및 표시를 위한 컴포넌트**
 
@@ -24,8 +24,7 @@ console.log(content); // <h3>SpiderZen</h3>
 
 ### getText()
 
-텍스트 박스 안의 내용을 텍스트 형식으로 반환\
-
+텍스트 박스 안의 내용을 텍스트 형식으로 반환
 
 > HTML 태그 없이 순수한 텍스트만 가져옴
 

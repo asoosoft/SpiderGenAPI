@@ -23,8 +23,7 @@
 | callback       | 비동기 로드 완료 후 실행할 콜백 함수    |
 | turnback       | 기존에 로드된 HTML을 재사용할 경우 전달 |
 
-**Returns**: Promise`<AView>` 생성된 AView 객체\
-
+**Returns**: Promise`<AView>` 생성된 AView 객체\\
 
 ### AView.setViewInItem( aview, item, owner )
 
@@ -190,17 +189,11 @@ button.init();
 this.view.addComponent(button, false, this.label);
 ```
 
-\
-
-
 ### disableScrlX()
 
 가로 스크롤을 비활성화
 
 > enableScrlManagerX를 통해 구현된 경우에만 동작.
-
-\
-
 
 ### eachChild( callback, isReverse )
 
@@ -224,17 +217,11 @@ this.view.eachChild(function(comp, index) {
 }, false);
 ```
 
-\
-
-
 ### enableActiveFocus( enable )
 
 뷰가 활성화될 때 포커스를 설정할지 여부를 설정
 
 * **enable** 포커스 여부 `<Boolean>`
-
-\
-
 
 ### enableScrlManagerX()
 
@@ -311,9 +298,6 @@ console.log(compArr);
 [...] 
 ```
 
-\
-
-
 ### findCompById( strId )
 
 아이디가 일치하는 뷰 내부의 컴포넌트를 반환
@@ -324,11 +308,8 @@ console.log(compArr);
 ```js
 //아이디가 label1인 컴포넌트를 리턴받아서 사용하는 예제
 const comp = this.view.findCompById('label1');
-comp.setText('제목');
+comp.setText('제목'
 ```
-
-\
-
 
 ### findCompByName( name )
 
@@ -343,9 +324,6 @@ const compArr = this.view.findCompByName('name1');
 console.log(compArr); 
 ```
 
-\
-
-
 ### findCompByText( text )
 
 텍스트가 일치하는 뷰 내부의 컴포넌트를 배열로 반환
@@ -359,10 +337,6 @@ const compArr = this.view.findCompByText('제목');
 console.log(compArr); 
 ```
 
-\
-\
-
-
 ### getChild( index )
 
 뷰 내부의 index 번째 컴포넌트를 반환
@@ -370,17 +344,11 @@ console.log(compArr);
 * **index** `<Number>` 인덱스 넘버
 * **Returns** `<AComponent>`
 
-\
-
-
 ### getChildCount()
 
 뷰 내부의 컴포넌트의 갯수를 반환
 
 * **Returns** `<Number>`
-
-\
-
 
 ### getChildren()
 
@@ -388,26 +356,17 @@ console.log(compArr);
 
 * **Returns** `<Array>`
 
-\
-
-
 ### getCntrData()
 
 뷰 컴포넌트의 컨테이너의 데이터를 반환
 
 * **Returns** `<All>` 저장된 데이터
 
-\
-
-
 ### getFirstChild()
 
 뷰 내부의 첫번째 컴포넌트를 반환
 
 * **Returns** `<AComponent>`
-
-\
-
 
 ### getItemData()
 
@@ -427,26 +386,17 @@ class SampleSubView extends AView;
 }
 ```
 
-\
-
-
 ### getLastChild()
 
 뷰 내부의 마지막 컴포넌트를 반환
 
 * **Returns** `<AComponent>`
 
-\
-
-
 ### getLoadCntr()
 
 loadContaine 메소드로 불러온 컨테이너를 반환
 
 * **Returns** `<AContainer>`
-
-\
-
 
 ### getLoadView()
 
@@ -457,9 +407,6 @@ loadContaine 메소드로 불러온 컨테이너를 반환
 ```js
 const innerView = this.view.getLoadView();
 ```
-
-\
-
 
 ### getTabData()
 
@@ -510,17 +457,11 @@ if (data) {
 
 뷰 내부의 컴포넌트들을 인라인 스타일로 변경
 
-\
-
-
 ### isHscroll()
 
 현재 가로 스크롤이 가능한 상태인지 여부를 반환
 
 * **Returns** `<Boolean>`
-
-\
-
 
 ### isMoreScrollBottom()
 
@@ -528,17 +469,11 @@ if (data) {
 
 * **Returns** `<Boolean>`
 
-\
-
-
 ### isMoreScrollLeft()
 
 좌측으로 추가적인 스크롤이 가능한지 여부를 반환
 
 * **Returns** `<Boolean>`
-
-\
-
 
 ### isMoreScrollRight()
 
@@ -546,17 +481,11 @@ if (data) {
 
 * **Returns** `<Boolean>`
 
-\
-
-
 ### isMoreScrollTop()
 
 상단으로 추가적인 스크롤이 가능한지 여부를 반환
 
 * **Returns** `<Boolean>`
-
-\
-
 
 ### isScroll()
 
@@ -564,17 +493,11 @@ if (data) {
 
 * **Returns** `<Boolean>`
 
-\
-
-
 ### isVscroll()
 
 현재 세로 스크롤이 가능한 상태인지 여부를 반환
 
 * **Returns** `<Boolean>`
-
-\
-
 
 ### loadContainer( viewUrl, cntrId, cntrClass )
 
@@ -604,9 +527,6 @@ this.view.loadContainer('Source/t1.lay', 'contId');
 const innerView = this.view.loadView('Source/t1.lay');
 ```
 
-\
-
-
 ### removeChildren( onlyRelease )
 
 뷰 내부의 컴포넌트를 모두 삭제
@@ -616,9 +536,6 @@ const innerView = this.view.loadView('Source/t1.lay');
 ```js
 this.view.removeChildren();
 ```
-
-\
-
 
 ### removeComponent( acomp )
 
@@ -631,24 +548,15 @@ this.view.removeChildren();
 this.view.removeComponent(this.label1);
 ```
 
-\
-
-
 ### removeFromView( onlyRelease )
 
 부모뷰로부터 자신을 제거
 
 * onlyRelease : true일 경우 실제로 컴포넌트를 제거하지 않고 연관된 자원만 해제.
 
-\
-
-
 ### removeLoadView()
 
 뷰 내부에 동적 로드된 뷰를 제거
-
-\
-
 
 ### scrollOffset( offset )
 
@@ -661,47 +569,29 @@ this.view.removeComponent(this.label1);
 this.view.scrollOffset(50);
 ```
 
-\
-
-
 ### scrollTo( pos )
 
 뷰를 pos의 위치로 스크롤
 
 * pos `<Number>` 이동 시킬 위치
 
-\
-
-
 ### scrollToBottom()
 
 뷰를 최하단의 위치로 스크롤
-
-\
-
 
 ### scrollToCenter()
 
 뷰를 중앙의 위치로 스크롤
 
-\
-
-
 ### scrollToTop()
 
 뷰를 최상단의 위치로 스크롤
-
-\
-
 
 ### setCntrData(data)
 
 뷰 컴포넌트의 컨테이너에 데이터를 세팅
 
 * **data** `<All>` 저장할 데이터
-
-\
-
 
 ### setHtml( html )
 
@@ -714,22 +604,13 @@ const html = '<span>최성식</span>';
 this.view.setHtml(html);
 ```
 
-\
-
-
 ### setScrollArrowX()
 
 뷰에 가로 ScrollArrow을 설정
 
-\
-
-
 ### setScrollArrowY()
 
 뷰에 세로 ScrollArrow을 설정
-
-\
-
 
 ### setScrollXComp( acomp )
 
@@ -743,17 +624,11 @@ this.view.setHtml(html);
 this.view.setScrollXComp(this.label);
 ```
 
-\
-
-
 ### setItemData(data)
 
 슬라이드뷰나 리스트뷰에 로드 될 떄 데이터를 세팅
 
 * **data** `<All>` 저장할 데이터
-
-\
-
 
 ### setTabData(data)
 
@@ -761,17 +636,11 @@ this.view.setScrollXComp(this.label);
 
 * **data** `<All>` 저장할 데이터
 
-\
-
-
 ### shrinkChildren( radio )
 
 뷰 내부에 있는 컴포넌트들의 높이, 폰트값을 매개변수 ratio 만큼 확대 / 축소
 
 * **radio** `<Float>` 배율 (0\~1)
-
-\
-
 
 ### setWidth(w)
 
@@ -785,9 +654,6 @@ this.view.setWidth('10px');
 this.view.setWidth('100%');
 ```
 
-\
-
-
 ### setHeight(h)
 
 컴포넌트의 높이를 지정
@@ -799,9 +665,6 @@ this.view.setHeight(10);
 this.view.setHeight('10px');
 this.view.setHeight('100%');
 ```
-
-\
-
 
 ### updatePosition( pWidth, pHeight )
 

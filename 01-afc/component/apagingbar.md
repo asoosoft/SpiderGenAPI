@@ -1,6 +1,6 @@
 # APagingBar
 
-> **Extends**: [AView](https://wikidocs.net/275135)
+> **Extends**: AView
 
 APagingBar는 AView를 확장한 컴포넌트로, 페이지네이션을 구현할 수 있는 툴바를 제공
 
@@ -51,13 +51,11 @@ pagingBar.init(context, evtListener);
 
 얕은 복사는 객체의 참조를 복사하므로, 원본 객체와 복사된 객체는 동일한 참조를 공유
 
-**obj** `<Object>`: 복사할 객체\
-
+**obj** `<Object>`: 복사할 객체
 
 > 이 객체의 속성들이 복사
 
-**Returns**: `<Object>` 복사된 객체.\
-
+**Returns**: `<Object>` 복사된 객체.
 
 > 입력 객체의 얕은 복사본을 반환
 
@@ -323,8 +321,7 @@ pagingBar.setParam({
 
 새로운 데이터는 기존 데이터에 추가되며, 동일한 키가 있을 경우 새로운 값으로 덮어씀
 
-**data** `<JSON Object>`: 병합할 데이터\
-
+**data** `<JSON Object>`: 병합할 데이터
 
 > 기존 데이터와 병합되어 페이지 전환 시 사용
 

@@ -1,6 +1,6 @@
 # AFlowOneLine
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **AFlowOneLine**은 SVG를 기반으로 **수평(horizon) 및 수직(vertical) 방향의 라인(Line) 컴포넌트**입니다.
 
@@ -11,15 +11,13 @@
 > 이 컴포넌트는 특정한 클래스 변수(constants)를 정의하지 않습니다.\
 > 데이터 속성(data-attribute)을 기반으로 동작합니다.
 >
-> \
 >
 
 ## Instance Variables
 
 ### pathEle `<SVGPathElement>`
 
-AFlowOneLine의 요소를 저장하는 변수입니다.\
-
+AFlowOneLine의 요소를 저장하는 변수입니다.
 
 resizePath() 등을 호출하여 **동적으로 선의 위치 및 크기를 변경**할 때 사용됩니다.
 
@@ -27,14 +25,12 @@ resizePath() 등을 호출하여 **동적으로 선의 위치 및 크기를 변�
 
 ### timeCode `<Number>`
 
-각 인스턴스의 **고유한 식별 ID**로 활용되는 값입니다.\
-
+각 인스턴스의 **고유한 식별 ID**로 활용되는 값입니다.
 
 이를 통해 **화살표 마커의 ID 충돌 방지** 역할을 합니다.
 
 ***
 
-\
 
 
 ## Instance Methods
@@ -124,8 +120,7 @@ flowLine.setArrowPosition("both");
 
 선의 색상을 변경합니다.
 
-*   **color** : `<String>` CSS 색상 값\
-
+*   **color** : `<String>` CSS 색상 값\\
 
     > 예: "red", "#ff0000", "rgb(255,0,0)"
 
@@ -162,4 +157,3 @@ flowLine.updatePosition(500, 300);
 
 ***
 
-\

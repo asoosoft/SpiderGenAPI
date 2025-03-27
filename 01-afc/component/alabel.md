@@ -1,14 +1,11 @@
 # ALabel
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
-ALabel은 AComponent를 확장한 클래스이며,\
-HTML \<label> 요소를 기반으로 텍스트를 표시하고 조작하는 기능을 제공\
-
+ALabel은 AComponent를 확장한 클래스이며, HTML \<label> 요소를 기반으로 텍스트를 표시하고 조작하는 기능을 제공
 
 텍스트 정렬, 마스킹 처리, 데이터 바인딩 등 다양한 기능을 지원
 
-\
 
 
 ## Instance Methods

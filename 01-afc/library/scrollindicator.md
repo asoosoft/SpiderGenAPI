@@ -33,9 +33,6 @@
 * **resetCallback** `<Function>`\
   스크롤 위치 초기화 후 호출될 콜백 함수
 
-\
-
-
 ## Instance Methods
 
 ### init(type, scrlElement)
@@ -140,9 +137,6 @@ scrollIndicator.show();
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

@@ -1,4 +1,4 @@
-# AWindow( containerId )
+# AWindow
 
 > **Extends** AContainer
 
@@ -162,9 +162,6 @@ const wnd = new AWindow('window1');
 wnd.open('Source/t1.lay', null, 10, 10, 500, 500);
 ```
 
-\
-
-
 ### close( result, data )
 
 윈도우를 닫고 결과를 반환.
@@ -181,9 +178,6 @@ wnd.setResultCallback((result, data) => {
 	wnd.close('완료', { extraInfo: '추가 데이터' 
 });
 ```
-
-\
-
 
 ### hide()
 
@@ -215,9 +209,6 @@ wnd.show()
 >
 > setDragOption('disabled', `true`/`false`) 를 통해 기능을 스위치.
 
-\
-
-
 ### enableResize()
 
 윈도우의 리사이즈 기능을 활성화
@@ -225,9 +216,6 @@ wnd.show()
 > 윈도우 open 시점에 setOption 의 `isResizable` 을 통해서도 설정.
 >
 > setResizeOption('disabled', `true`/`false`) 를 통해 기능을 스위치.
-
-\
-
 
 ### move( x, y )
 
@@ -242,15 +230,9 @@ wnd.openAsDialog('Source/t1.lay');
 wnd.move(10, 10);
 ```
 
-\
-
-
 ### moveToCenter()
 
 윈도우를 중앙으로 이동
-
-\
-
 
 ### moveX( x )
 
@@ -258,17 +240,11 @@ wnd.move(10, 10);
 
 * **x** `<Number>` or `<String>` 이동할 x 좌표, **10, 10px, 10%**
 
-\
-
-
 ### moveY( y )
 
 윈도우의 y 위치를 이동
 
 * **y** `<Number>` or `<String>` 이동할 x 좌표, **10, 10px, 10%**
-
-\
-
 
 ### offset( dx, dy )
 
@@ -276,9 +252,6 @@ wnd.move(10, 10);
 
 * **dx** `<Number>` 이동할 x 거리
 * **dy** `<Number>` 이동할 y 거리
-
-\
-
 
 ### modalManage( zIndex )
 
@@ -314,9 +287,6 @@ const dlg = new AWindow();
 dlg.openAsDialog('Source/dialog.lay', null, 400, 300);
 ```
 
-\
-
-
 ### openAsMenu( viewUrl, parent, width, height )
 
 메뉴 팝업처럼 작동하도록 설정하여 윈도우를 오픈
@@ -337,9 +307,6 @@ const menu = new AWindow();
 menu.openAsMenu('Source/menu.lay', null, 200, 300);
 ```
 
-\
-
-
 ### openCenter( viewUrl, parent, width, height )
 
 윈도우를 화면 가운데 위치하도록 오픈
@@ -349,18 +316,12 @@ menu.openAsMenu('Source/menu.lay', null, 200, 300);
 * **width** `<String>` or `<Number>` 윈도우의 넓이
 * **height** `<String>` or `<Number>` 윈도우의 높이
 
-\
-
-
 ### openFull( viewUrl, parent )
 
 윈도우를 전체 화면으로 오픈
 
 * **viewUrl** `<String>` 윈도우에 보여질 뷰 리소스 url
 * **parent** `<AContainer>` 자신의 부모 컨테이너
-
-\
-
 
 ### setDragOption( key, value )
 
@@ -381,9 +342,6 @@ wnd.open(...);
 //드래그 기능을 잠시 비활성, false 로 셋팅하면 다시 활성.
 wnd.setDragOption('disabled', true);
 ```
-
-\
-
 
 ### setModalBgOption( option )
 
@@ -424,9 +382,6 @@ wnd.open(...);
 wnd.setResizeOption('disabled', true);
 ```
 
-\
-
-
 ### setResultCallback( callback )
 
 윈도우가 닫힌 후 실행할 콜백 함수를 설정
@@ -440,9 +395,6 @@ wnd.setResultCallback(function(result, data)
     console.log(data);
 });
 ```
-
-\
-
 
 ### setResultListener( resultListener )
 

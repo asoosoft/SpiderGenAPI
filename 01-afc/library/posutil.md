@@ -21,9 +21,6 @@ let posUtil = new PosUtil(acomp);
 
 ***
 
-\
-
-
 ## Properties
 
 * **PIXEL** `<Number>`: 기본 픽셀 값. 기본값은 10
@@ -33,9 +30,6 @@ let posUtil = new PosUtil(acomp);
 * **dh** `<Number>`: 높이 변경 값
 * **stickyMoveX** `<Number>`: X축에서 스티키 효과로 이동한 거리
 * **stickyMoveY** `<Number>`: Y축에서 스티키 효과로 이동한 거리
-
-\
-
 
 ## Instance Methods
 
@@ -204,8 +198,7 @@ let marginInfo = posUtil.getMarginInfo(true);
 
 스트레치 관련 정보를 가져옴
 
-*   **dataKey** `<String>`: 스트레치할 방향이나 크기\
-
+*   **dataKey** `<String>`: 스트레치할 방향이나 크기\\
 
     > left, right, top, bottom, width, height
 * **isForce** `<Boolean>`: 강제로 값을 가져올지 여부
@@ -220,8 +213,7 @@ let stretchValue = posUtil.getStretchValue('width');
 
 스트레치 관련 값을 설정
 
-*   **dataKey** `<String>`: 스트레치할 방향이나 크기\
-
+*   **dataKey** `<String>`: 스트레치할 방향이나 크기\\
 
     > left, right, top, bottom, width, height
 * **value** `<String | Boolean>`: 설정할 스트레치 값
@@ -231,9 +223,6 @@ posUtil.setStretchValue('width', '50%');
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

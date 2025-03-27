@@ -94,9 +94,6 @@
 
 ***
 
-\
-
-
 ## Instance Methods
 
 ### setIconColor(iconColor)
@@ -292,9 +289,6 @@ refreshIndicator.enable(true);
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

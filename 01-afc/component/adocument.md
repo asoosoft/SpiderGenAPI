@@ -64,7 +64,6 @@
 
 * **Returns** `<Boolean>`
 
-\
 
 
 ### isModified()
@@ -75,8 +74,7 @@
 
 ### newDocument( uri, docName )
 
-새로운 문서를 생성\
-
+새로운 문서를 생성
 
 * **uri** : 문서의 경로
 * **docName** : 문서의 이름
@@ -91,7 +89,6 @@
 document.openDocument('C:\path\filename.prj');
 ```
 
-\
 
 
 ### reportModify( modified )
@@ -105,8 +102,7 @@ document.reportModify(true); // UI에서 수정됨 표시
 document.reportModify(false); // UI에서 수정 안됨 표시
 ```
 
-\
-
+\\
 
 ### saveDocument( savePath )
 
@@ -119,8 +115,7 @@ document.reportModify(false); // UI에서 수정 안됨 표시
 document.saveDocument('C:\path\saveFile.prj');
 ```
 
-\
-
+\\
 
 ### setDocumentContent( content )
 
@@ -207,8 +202,7 @@ console.log(document.isModified());
 true
 ```
 
-\
-
+\\
 
 ### setView( view )
 

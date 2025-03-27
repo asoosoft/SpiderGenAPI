@@ -1,15 +1,14 @@
-# AFrameWnd(containerId)
+# AFrameWnd
 
-> **Extends** [AWindow](https://wikidocs.net/275126)
+> **Extends** AWindow
 
 * **containerId** \<String> 컨테이너 아이디
 
-프레임을 추가한 기본 윈도우 컨테이너\
-
+프레임을 추가한 기본 윈도우 컨테이너
 
 상단에 타이틀바, 최대화/최소화/닫기 버튼이 있으며, 하단에 상태바가 포함 가능
 
-> 기본적인 사용법은 [AWindow](https://wikidocs.net/275126)와 동일
+> 기본적인 사용법은 AWindow와 동일
 
 ```js
 let frm = new AFrameWnd('myFrame');
@@ -62,7 +61,6 @@ frm.open('Source/TestView.lay', null, '타이틀', 100, 100, 400, 300);
 
 ***
 
-\
 
 
 ## Instance Methods

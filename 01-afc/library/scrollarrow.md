@@ -17,9 +17,6 @@
 
     > 기본값: 2000ms
 
-\
-
-
 ## Instance Methods
 
 ### setArrow(dir, arrow1, arrow2)
@@ -169,9 +166,6 @@ scrollArrow.visibleCheckHori();
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

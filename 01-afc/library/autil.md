@@ -315,9 +315,6 @@ undoStack.append(document.createElement('div'));
 
 ***
 
-\
-
-
 ## jQuery Utility Function
 
 ### $.fn.textfill(maxFontPixels)
@@ -328,7 +325,6 @@ undoStack.append(document.createElement('div'));
 
 * **maxFontPixels** `<Number>` 최대 폰트 크기 (픽셀 단위)
 
-\
 
 
 **동작 방식**
@@ -361,7 +357,6 @@ $("#text-box").textfill(30);
 
       > 기본값 : px
 
-\
 
 
 **동작 방식**
@@ -389,15 +384,12 @@ HTML 요소의 **CSS 스타일 값을 가져오는 함수**
 
     > 기본값 : false
 
-\
 
 
-*   **Returns** `<Object>`\
-
+*   **Returns** `<Object>`\\
 
     > 예: { "font-size": "16px", "color": "rgb(0,0,0)" }
 
-\
 
 
 ```js
@@ -417,7 +409,6 @@ HTML 요소에 **스크롤바가 존재하는지 확인하는 함수**
 * **Returns** `<Boolean>`\
   true : 스크롤바 있음, false : 스크롤바 없음
 
-\
 
 
 **동작 방식**
@@ -425,7 +416,6 @@ HTML 요소에 **스크롤바가 존재하는지 확인하는 함수**
 * scrollHeight(전체 높이)에서 height()(보이는 높이)를 뺀 값이\
   **1px 이상이면 true 반환, 그렇지 않으면 false 반환**
 
-\
 
 
 ```js

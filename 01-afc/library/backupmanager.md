@@ -4,7 +4,6 @@
 
 > 웹 애플리케이션에서 대량의 데이터를 화면에 표시할 경우, 모든 항목을 DOM에 추가하면 성능이 저하될 수 있다. 이를 해결하기 위해 **스크롤을 기준으로 일정 개수의 항목만 유지하면서, 보이지 않는 항목은 백업해두었다가 필요할 때 복원하는 방식**을 사용
 
-\
 
 
 ## Static Variables
@@ -25,15 +24,9 @@
 
 항목이 추가되고 제거되는 jQuery 객체
 
-\
-
-
 ### backupScroll `<Number>`
 
 복원할 스크롤 위치값. 항목들을 복원, 백업할 때 스크롤 위치를 변경하기 위해 사용
-
-\
-
 
 ### delegator `<Object>`
 
@@ -41,15 +34,9 @@ BackupManager를 사용하는 객체를 저장.
 
 객체에는 반드시 getTopItem, getBottomItem, getTotalCount 메서드가 있어야 함.
 
-\
-
-
 ### headStack `<jQuery Object>`
 
 윗부분의 엘리먼트들을 저장하고 있을 보이지 않는 div jQuery 객체
-
-\
-
 
 ### isMoveReal()
 
@@ -57,22 +44,13 @@ BackupManager를 사용하는 객체를 저장.
 
 * **Returns** `<Boolean>` 실제 이동 여부
 
-\
-
-
 ### itemContentCnt `<Number>`
 
 한번에 추가되는 항목의 로우 개수. 항목이 1개의 로우가 아닌 2개 이상의 로우로 구성될 수 있기 때문에 저장
 
-\
-
-
 ### itemHeight `<Number>`
 
 하나의 항목의 높이를 지정
-
-\
-
 
 ### maxRow `<Number>`
 
@@ -80,32 +58,19 @@ BackupManager를 사용하는 객체를 저장.
 
 * **Default** 50
 
-\
-
-
 ### restoreCount `<Number>`
 
 내부 항목들이 한번에 복원될 개수를 지정
 
 * **Default** 20
 
-\
-
-
 ### scrollEle `<HTMLElement>`
 
 스크롤이 발생하는 엘리먼트. 항목들이 복원 될때 스크롤 위치를 변경해야 할 수도 있기 때문에 저장
 
-\
-
-
 ### tailStack `<jQuery Object>`
 
 아래부분의 엘리먼트들을 저장하고 있을 보이지 않는 div jQuery 객체
-
-\
-\
-
 
 ## Instance Methods
 
@@ -117,9 +82,6 @@ BackupManager를 사용하는 객체를 저장.
 * **isApplyBackupScroll** `<Boolean>` 백업 스크롤 적용 여부
 * **Returns** `<Boolean>`
 
-\
-
-
 ### applyBackupScroll()
 
 복원 스크롤 위치값을 실제 스크롤 위치에 반영. 여러 개의 BackupManager가 같은 scrollEle을 바라볼 경우, 중복 적용되지 않도록 주의.
@@ -129,17 +91,11 @@ BackupManager를 사용하는 객체를 저장.
 
 * **Returns** `<Number>` 복원된 스크롤 이동값
 
-\
-
-
 ### backupHead( row )
 
 항목을 headStack 에 append
 
 * **row** `<jQuery Object>` 추가할 항목
-
-\
-
 
 ### backupHeadPre( row )
 
@@ -147,17 +103,11 @@ BackupManager를 사용하는 객체를 저장.
 
 * **row** `<jQuery Object>` 추가할 항목
 
-\
-
-
 ### backupTail( row )
 
 항목을 tailStack 에 append
 
 * **row** `<jQuery Object>` 추가할 항목
-
-\
-
 
 ### backupTailPre( row )
 
@@ -165,17 +115,11 @@ BackupManager를 사용하는 객체를 저장.
 
 * **row** `<jQuery Object>` 추가할 항목
 
-\
-
-
 ### checkHeadBackup()
 
 head 쪽에 복원할 항목이 있는 경우 복원. 복원한 양 만큼 tail 쪽에 백업하고 스크롤 위치를 변경.
 
 * **Returns** `<Boolean>`
-
-\
-
 
 ### checkTailBackup()
 
@@ -183,29 +127,17 @@ tail 쪽에 복원할 항목이 있는 경우 복원. 복원한 양 만큼 head 
 
 * **Returns** `<Boolean>`
 
-\
-
-
 ### clearAll()
 
 headStack과 tailStack에 저장된 백업항목들을 제거.
-
-\
-
 
 ### clearHead()
 
 headStack 에 저장된 항목들을 제거
 
-\
-
-
 ### clearTail()
 
 tailStack 에 저장된 항목들을 제거
-
-\
-
 
 ### create( delegator, maxRow, restoreCount )
 
@@ -217,15 +149,9 @@ tailStack 에 저장된 항목들을 제거
 * **maxRow** `<Number>` 표현될 항목의 최대 개수
 * **restoreCount** `<Number>` 복원할 항목의 개수
 
-\
-
-
 ### destroy()
 
 headStack과 tailStack을 제거
-
-\
-
 
 ### getHeadCount()
 
@@ -233,17 +159,11 @@ headStack 안에 있는 항목의 개수를 반환
 
 * **Returns** `<Number>`
 
-\
-
-
 ### getHRestoreCount()
 
 headStack 안에 있는 항목의 개수와 한번에 복원할 개수 중 작은 값을 반환
 
 * **Returns** `<Number>`
-
-\
-
 
 ### getTailCount()
 
@@ -251,17 +171,11 @@ tailStack 안에 있는 항목의 개수를 반환
 
 * **Returns** `<Number>`
 
-\
-
-
 ### getTRestoreCount()
 
 tailStack 안에 있는 항목의 개수와 한번에 복원할 개수 중 작은 값을 반환
 
 * **Returns** `<Number>`
-
-\
-
 
 ### minusBackupScroll( count )
 
@@ -270,17 +184,11 @@ tailStack 안에 있는 항목의 개수와 한번에 복원할 개수 중 작�
 * **count** `<Number>` 감소시킬 항목의 개수
 * **주의**: `afc.isIos`가 `true`이면서 `afc.andVer > 5.1`일 경우, 백업 스크롤이 변경되지 않음.
 
-\
-
-
 ### plusBackupScroll( scrollVal )
 
 백업된 항목이 추가되었을 때, backupScroll 값을 증가
 
 * **scrollVal** `<Number>` 추가할 스크롤 값
-
-\
-
 
 ### prependItemManage( items )
 
@@ -291,26 +199,17 @@ tailStack 안에 있는 항목의 개수와 한번에 복원할 개수 중 작�
 * **items** `<jQuery Object>` 추가할 항목들
 * **Returns** `<Boolean>`
 
-\
-
-
 ### restoreHead()
 
 headStack 에서 마지막 항목을 뽑아서 반환
 
 * **Returns** `<jQuery Object>`
 
-\
-
-
 ### restoreTail()
 
 **tailStack** 에서 마지막 항목을 뽑아서 반환
 
 * **Returns** `<jQuery Object>`
-
-\
-
 
 ### setBackupInfo( itemHeight, itemContentCnt, scrollEle, $contentEle )
 
@@ -321,23 +220,14 @@ headStack 에서 마지막 항목을 뽑아서 반환
 * **scrollEle** `<HTMLElement>` 스크롤이 발생하는 엘리먼트. `null`일 경우 스크롤 이동이 적용되지 않음.
 * **$contentEle** `<jQuery Object>` 항목이 추가되고 제거되는 jQuery 객체. `null`일 경우 복원 및 백업이 정상 동작하지 않을 수 있음.
 
-\
-
-
 ### setItemHeight( itemHeight )
 
 항목의 높이를 지정
 
 * **itemHeight** `<Number>` 항목 높이
 
-\
-
-
 ### setMoveReal( enable )
 
 현재 이동 여부를 설정
 
 * **enable** `<Boolean>` 이동 여부를 나타내는 값
-
-\
-\

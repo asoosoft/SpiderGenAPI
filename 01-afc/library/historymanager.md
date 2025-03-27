@@ -35,9 +35,6 @@ let historyManager = new HistoryManager();
 console.log(historyManager.actData);  // []
 ```
 
-\
-
-
 ## Instance Methods
 
 ### reg(info, undoFunc, redoFunc)
@@ -197,5 +194,3 @@ if (redoResult) {
   console.log("다음 히스토리가 없습니다.");
 }
 ```
-
-\

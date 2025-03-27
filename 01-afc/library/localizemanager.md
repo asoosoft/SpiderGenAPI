@@ -1,7 +1,9 @@
 # LocalizeManager
 
-스파이더젠으로 만든 프로젝트를 여러지역의 언어로 지원하기 위한 라이브러리.\
-자세한 사용 방법은 [이곳](https://wikidocs.net/42749)을 참조.
+스파이더젠으로 만든 프로젝트를 여러지역의 언어로 지원하기 위한 라이브러리.
+
+\
+자세한 사용 방법은 [이곳](https://app.gitbook.com/s/a1djbpbzXMGAimyJz5v8/05-advanced/01-localizing)을 참조.
 
 ## Static Variables
 
@@ -26,9 +28,6 @@ LocalizeManager.LANGUAGE = 'ch';
 같은 언어라도 지역(Flavor)에 따라 번역이 다를 수 있음.\
 예를 들어, **en-US**(미국 영어)와 **en-GB**(영국 영어)의 표현이 다를 수 있음.\
 **LocalizeManager.FLAVOR**값을 변경하면, 해당 지역 버전의 번역을 적용.
-
-\
-
 
 ### LocalizeManager.resMap `<Object>`
 

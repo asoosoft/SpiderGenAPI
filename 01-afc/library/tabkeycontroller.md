@@ -11,24 +11,15 @@ const tabController = new TabKeyController();
 tabController.init(myContainerView);
 ```
 
-\
-
-
 ## Instance Variables
 
 ### componentMap `<Array>`
 
 컴포넌트를 배열로 가지고 있음. HTML문서의 Dom Tree의 방식처럼 저장되므로 Depth가 존재.
 
-\
-
-
 ### tabIndexArr `<Array>`
 
 TabIndex를 빠르게 검색하기 위한 배열
-
-\
-
 
 ## Class Methods
 
@@ -55,9 +46,6 @@ TabKeyController.nextFocus(currentComponent, event);
 tabController.init(myContainerView);
 ```
 
-\
-
-
 ### focusOnInit( flag, noActive )
 
 최초 포커스를 설정하는 함수.
@@ -81,9 +69,6 @@ const nextComponent =
 tabController.findNextTab(currentComponent, event.shiftKey);
 ```
 
-\
-
-
 ### addCompMap( acomp, owner )
 
 탭키 컨트롤러 배열을 생성.
@@ -91,17 +76,11 @@ tabController.findNextTab(currentComponent, event.shiftKey);
 * **acomp** `<AComponent>` 추가할 컴포넌트
 * **owner** `<AComponent>` 부모 컴포넌트
 
-\
-
-
 ### saveOwnerMap( owner )
 
 동적으로 로드된 탭 인덱스를 저장.
 
 **owner** `<AComponent>` 부모 컴포넌트
-
-\
-
 
 ### makeTabIndexArr()
 

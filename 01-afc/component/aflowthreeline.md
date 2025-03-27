@@ -1,9 +1,12 @@
 # AFlowThreeLine
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
-**AFlowThreeLine**은 **세 개의 꺾인 선을 그리는 SVG 기반의 라인 컴포넌트**\
-data-direct 속성을 이용하여 **선의 방향**을 조정할 수 있으며,\
+**AFlowThreeLine**은 **세 개의 꺾인 선을 그리는 SVG 기반의 라인 컴포넌트**
+
+\
+data-direct 속성을 이용하여 **선의 방향**을 조정할 수 있으며,&#x20;
+
 data-leaning-value와 data-leaning-position을 활용하여 **선의 기울기를 조정**할 수 있음
 
 ## Class Variables
@@ -12,15 +15,13 @@ data-leaning-value와 data-leaning-position을 활용하여 **선의 기울기�
 >
 > 데이터 속성(data-attribute)을 기반으로 동작
 >
-> \
 >
 
 ## Instance Variables
 
 ### **pathEle** `<SVGPathElement>`
 
-AFlowThreeLine의 \<path> 요소를 저장하는 변수\
-
+AFlowThreeLine의 \<path> 요소를 저장하는 변수
 
 resizePath() 등을 호출하여 **동적으로 선의 위치 및 크기를 변경**할 때 사용
 
@@ -28,14 +29,12 @@ resizePath() 등을 호출하여 **동적으로 선의 위치 및 크기를 변�
 
 ### **timeCode** `<Number>`
 
-각 인스턴스의 **고유한 식별 ID**로 활용되는 값\
-
+각 인스턴스의 **고유한 식별 ID**로 활용되는 값
 
 이를 통해 **화살표 마커의 ID 충돌 방지** 역할
 
 ***
 
-\
 
 
 ## Instance Methods
@@ -115,8 +114,7 @@ flowLine.setArrowPosition("both");
 
 선의 색상을 변경
 
-*   **color** : `<String>` CSS 색상 값\
-
+*   **color** : `<String>` CSS 색상 값
 
     > "red", "#ff0000", "rgb(255,0,0)"
 
@@ -153,4 +151,3 @@ flowLine.updatePosition(500, 300);
 
 ***
 
-\

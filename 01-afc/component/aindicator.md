@@ -1,9 +1,8 @@
 # AIndicator
 
-> **Extends** [AFloat](https://wikidocs.net/275188)
+> **Extends** AFloat
 
-**AIndicator**는 [AFloat](https://wikidocs.net/275188)을 확장한 클래스로, **로딩 인디케이터** 역할을 수행\
-
+**AIndicator**는 AFloat을 확장한 클래스로, **로딩 인디케이터** 역할을 수행
 
 OLTP(Online Transaction Processing) 모드에서 동작을 제어하며, 여러 개의 비동기 요청이 있을 경우 **중복 표시 방지** 기능을 제공
 
@@ -39,7 +38,6 @@ AIndicator.isOltp = false;
 
 ***
 
-\
 
 
 ## Class Methods
@@ -90,7 +88,6 @@ AIndicator.endOltp();
 
 ***
 
-\
 
 
 ## Instance Methods
@@ -130,8 +127,7 @@ indicator.createSpan();
 
 ### show()
 
-인디케이터를 화면에 표시\
-
+인디케이터를 화면에 표시
 
 네이티브 Cordova 환경에서는 AppPlugin을 사용하여 네이티브 프로그레스 바를 표시
 

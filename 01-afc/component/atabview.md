@@ -1,6 +1,6 @@
 # ATabView
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **ATabView**는 여러 개의 뷰를 **탭 형식으로 관리**할 수 있는 컴포넌트
 
@@ -95,7 +95,6 @@ setSlideDir('right') 형태로 설정 가능
 
 ***
 
-\
 
 
 ## Instance Methods
@@ -110,8 +109,7 @@ ATabView의 옵션을 설정
 
     * **contentReload**: 탭 전환 시 컨텐츠를 새로 로드할지 여부
     * **enableAnimation**: 애니메이션 사용 여부
-    *   **changeAnimation**: 탭 전환 애니메이션 방식\
-
+    *   **changeAnimation**: 탭 전환 애니메이션 방식\\
 
         > slide, fade 등
     *   **slideDir**: 슬라이드 애니메이션의 방향
@@ -122,7 +120,6 @@ ATabView의 옵션을 설정
 * **noOverwrite** `<Boolean>`\
   true일 경우 기존 옵션을 덮어쓰지 않습니다. 기본값은 false
 
-\
 
 
 ```js
@@ -635,7 +632,6 @@ tabview.clearSelectTab();
 
 ***
 
-\
 
 
 ## 프레임워크 자동 호출 함수

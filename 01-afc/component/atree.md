@@ -18,9 +18,6 @@
 this.tree.selectStyle = 'tree-select';
 ```
 
-\
-
-
 ### overStyle `<String>`
 
 드래그 오버 시 적용될 클래스 이름
@@ -28,9 +25,6 @@ this.tree.selectStyle = 'tree-select';
 ```js
 this.tree.overStyle = 'tree-over';
 ```
-
-\
-
 
 ### afterStyle `<String>`
 
@@ -54,15 +48,9 @@ this.tree.afterStyle = 'tree-after';
 this.tree.collapseAll();
 ```
 
-\
-
-
 ### deleteAllItems()
 
 루트 아이템을 제외한 모든 아이템을 삭제
-
-\
-
 
 ### deleteItem( item, mergeHistory )
 
@@ -78,9 +66,6 @@ const item = this.tree.findItemByName('test');
 this.tree.deleteItem(item);
 ```
 
-\
-
-
 ### deselectItem( item )
 
 해당 아이템의 선택을 해제
@@ -88,18 +73,12 @@ this.tree.deleteItem(item);
 * **item** `<HTMLElement>` 트리 아이템
 * **Returns** `<Boolean>` 성공적으로 선택 해제 될 경우에 true를 반환
 
-\
-
-
 ### expandItem( item, isExpand )
 
 폴더 형식의 트리아이템을 펼침상태를 설정
 
 * **item** `<HTMLElement>` 트리 아이템
 * **isExpand** `<Boolean>` 펼침상태 여부
-
-\
-
 
 ### findChildItemByData( data, pItem, compare )
 
@@ -125,9 +104,6 @@ const sampleFilter = function(a, b)
 const item = this.tree.findChildItemByData(findData, pItem, sampleFilter);
 ```
 
-\
-
-
 ### findChildItemByName( name, pItem )
 
 매개변수 pItem의 한 단계의 하위 아이템 중에 아이템의 이름이 매개변수 name과 일치하는 아이템을 찾아 반환
@@ -137,9 +113,6 @@ const item = this.tree.findChildItemByData(findData, pItem, sampleFilter);
 * **name** `<String>` 트리 아이템의 name
 * **pItem** `<HTMLElement>` 부모 아이템
 * **Returns** `<HTMLElement>` 트리 아이템
-
-\
-
 
 ### findItemByData( data, pItem, compare )
 
@@ -165,9 +138,6 @@ const sampleFilter = function(a, b)
 const item = this.tree.findItemByData(findData, pItem, sampleFilter);
 ```
 
-\
-
-
 ### findItemByName( name, pItem )
 
 매개변수 pItem의 모든 하위 아이템 중에 아이템의 이름이 매개변수 name과 일치하는 아이템을 찾아 반환
@@ -177,9 +147,6 @@ const item = this.tree.findItemByData(findData, pItem, sampleFilter);
 * **name** `<String>` 트리 아이템의 name
 * **pItem** `<HTMLElement>` 부모 아이템
 * **Returns** `<HTMLElement>` 트리 아이템
-
-\
-
 
 ### findItemsByNameLike( name, pItem )
 
@@ -193,9 +160,6 @@ const item = this.tree.findItemByData(findData, pItem, sampleFilter);
 //아이템 이름에 'cat'이 포함된 모든 아이템을 반환한다.
 const items = this.tree.findItemsByNameList('cat', pItem);
 ```
-
-\
-
 
 ### getAllItems()
 
@@ -226,9 +190,6 @@ console.log(expandedItems);
 * **pItem** `<HTMLElement>` 부모 아이템(생략시 루트 아이템 기준)
 * **Returns** `<JQuery Array>`
 
-\
-
-
 ### getChildren( pItem, callback )
 
 부모아이템의 하위 아이템들에서 콜백함수를 호출
@@ -242,17 +203,11 @@ this.tree.getChildren(pItem, function(item, idx){
 });
 ```
 
-\
-
-
 ### getClickedItem()
 
 가장 마지막에 클릭한 아이템을 반환
 
 * **Returns** `<HTMLElement>` 가장 마지막에 클릭한 트리 아이템
-
-\
-
 
 ### getFirstChildItem( pItem )
 
@@ -261,18 +216,12 @@ this.tree.getChildren(pItem, function(item, idx){
 * **pItem** `<HTMLElement>` 부모 아이템
 * **Returns** `<HTMLElement>` 트리 아이템
 
-\
-
-
 ### getLastChildItem( pItem )
 
 부모 아이템의 마지막 자식 아이템을 반환
 
 * **pItem** `<HTMLElement>` 부모 아이템
 * **Returns** `<HTMLElement>` 트리 아이템
-
-\
-
 
 ### getParentItem( item )
 
@@ -281,17 +230,11 @@ this.tree.getChildren(pItem, function(item, idx){
 * **item** `<HTMLElement>` 트리 아이템
 * **Returns** `<HTMLElement>` 부모 아이템
 
-\
-
-
 ### getRootItem()
 
 트리의 루트아이템을 반환
 
 * **Returns** `<HTMLElement>`
-
-\
-
 
 ### getSelectedIndex( item )
 
@@ -300,17 +243,11 @@ this.tree.getChildren(pItem, function(item, idx){
 * **item** `<HTMLElement>` 트리 아이템
 * **Returns** `<Number>` 아이템의 위치 인덱스(선택된게 없다면 -1을 리턴)
 
-\
-
-
 ### getSelectedItems()
 
 트리에서 선택되어 있는 아이템을 배열로 반환
 
 * **Returns** `<Array>`
-
-\
-
 
 ### getSelectedParent( mItem )
 
@@ -318,9 +255,6 @@ this.tree.getChildren(pItem, function(item, idx){
 
 * **mItem** `<HTMLElement>` 트리 아이템.
 * **Returns** `<Boolean>`
-
-\
-
 
 ### initTree( iconMapUrl )
 
@@ -331,9 +265,6 @@ this.tree.getChildren(pItem, function(item, idx){
 ```js
 this.tree.initTree('Source/img/tree_item.png');
 ```
-
-\
-
 
 ### insertItem( pItem, pos, name, data, icon, isExpand, mergeHistory )
 
@@ -346,10 +277,7 @@ this.tree.initTree('Source/img/tree_item.png');
 * **icon** `<String>` 아이콘
 * **isExpand** `<Boolean>` 트리 펼침여부
 * **mergeHistory** `<String>` 각각 다른타겟의 액션을 한 history로 묶고 싶을때 사용한다. true일경우 현재 offset 히스토리 정보에 추가로 등록.
-*   **Returns** `<Object>` 새로 생성된 트리 아이템
-
-    \
-
+* **Returns** `<Object>` 새로 생성된 트리 아이템
 
 ### insertItemObj( itemInfo, isExpand, mergeHistory )
 
@@ -377,17 +305,11 @@ this.tree.insertItemObj({
 }, false, false);
 ```
 
-\
-
-
 ### isExistRoot()
 
 선택된 아이템들중에 root Item이 포함되어있는지 여부를 반환
 
 * **Returns** `<Boolean>` 포함 여부
-
-\
-
 
 ### isMovePossible( moveItem, pItem )
 
@@ -396,9 +318,6 @@ this.tree.insertItemObj({
 * **moveItem** `<HTMLElement>` 트리 아이템
 * **pItem** `<HTMLElement>` 부모 아이템
 * **Returns** `<Boolean>` 이동 가능 여부
-
-\
-
 
 ### moveItem( dropItem, mItems, isInsertAfter )
 
@@ -415,15 +334,9 @@ const items = this.tree.getSelectedItems();
 this.tree.moveItem(dropItem, items, true);
 ```
 
-\
-
-
 ### redoTree()
 
-트리의 히스토리 redo 기능을 호출
-
-\
-
+트리의 히스토리 redo 기능을 호
 
 ### rename( item, name )
 
@@ -432,17 +345,11 @@ this.tree.moveItem(dropItem, items, true);
 * **item** `<HTMLElement>` 트리 아이템.
 * **name** `<String>` 변경될 라벨의 text
 
-\
-
-
 ### scrollToItem( item )
 
 해당 아이템의 보이도록 스크롤
 
 * **pItem** `<HTMLElement>` 트리 아이템
-
-\
-
 
 ### selectItem( item, isMulti, e )
 
@@ -452,22 +359,13 @@ this.tree.moveItem(dropItem, items, true);
 * **isMulti** `<Boolean>` 다중 아이템 선택 가능 여부
 * **e** `<JQuery Event>` 이벤트 객체
 
-\
-
-
 ### selectNextItem()
 
 트리에서 바로 다음 아이템을 선택
 
-\
-
-
 ### selectPrevItem()
 
 트리에서 바로 이전 아이템을 선택
-
-\
-
 
 ### setItem( item, itemInfo )
 
@@ -487,9 +385,6 @@ this.tree.setItem(item, {
 });
 ```
 
-\
-
-
 ### setItemComment( item, comment )
 
 아이템 name 오른쪽에 코멘트 라벨을 추가
@@ -501,18 +396,10 @@ this.tree.setItem(item, {
 this.tree.setItemComment(item, '아이템 설명');
 ```
 
-\
-
-
 ### startUseHistory()
 
 히스토리 사용을 시작
 
-\
-
-
 ### undoTree()
 
 트리의 히스토리 undo 기능을 호출
-
-\

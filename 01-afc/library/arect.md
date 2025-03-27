@@ -7,9 +7,6 @@
 위치(left, top) 및 크기(width, height)를 저장하며, 다양한 연산 및 좌표 변환 기능을 제공
 
 > 이 객체는 UI 컴포넌트의 영역을 계산하거나 충돌 감지, 이동 연산 등에 활용할 수 있음.
->
-> \
->
 
 ## Properties
 
@@ -51,9 +48,6 @@ console.log(rect);
 // {left: 0, top: 0, width: 0, height: 0, right: 0, bottom: 0}
 ```
 
-\
-
-
 ### setSizeRect(l, t, w, h)
 
 사각형의 위치와 크기를 설정
@@ -71,9 +65,6 @@ console.log(rect);
 ARect {left: 10, top: 10, width: 10, height: 10, right: 20, …}
 ```
 
-\
-
-
 ### setPointRect(l, t, r, b)
 
 사각형의 좌표 정보를 설정
@@ -82,9 +73,6 @@ ARect {left: 10, top: 10, width: 10, height: 10, right: 20, …}
 * **t** : `<Number>` top 값
 * **r** : `<Number>` right 값
 * **b** : `<Number>` bottom 값
-
-\
-
 
 ### offsetRect(offsetX, offsetY)
 
@@ -97,9 +85,6 @@ ARect {left: 10, top: 10, width: 10, height: 10, right: 20, …}
 rect.offsetRect(5, 10);
 console.log(rect); // 모든 좌표가 (5,10)만큼 이동됨
 ```
-
-\
-
 
 ### copyRect( src )
 
@@ -122,29 +107,17 @@ DOMRect {x: 510, y: 50, width: 80, height: 22, top: 50, …}
 ARect {x: 510, y: 50, width: 80, height: 22, top: 50, …}
 ```
 
-\
-
-
 ### absRect()
 
 width 또는 height 값이 음수일 경우 left ↔ right, top ↔ bottom 값을 서로 교환하여 항상 양수 값이 되도록 조정
-
-\
-
 
 ### reverseX()
 
 **left** ↔ **right** 값을 서로 교환.
 
-\
-
-
 ### reverseY()
 
 **top** ↔ **bottom** 값을 서로 교환.
-
-\
-
 
 ### refreshSize()
 
@@ -154,15 +127,9 @@ width 또는 height 값이 음수일 경우 left ↔ right, top ↔ bottom 값�
 rect.refreshSize();
 ```
 
-\
-
-
 ### refreshRect()
 
 **right** 및 **bottom** 값을 left + width, top + height 값으로 다시 계산
-
-\
-
 
 ### isSubsetPt(x, y)
 
@@ -190,9 +157,6 @@ false
 true
 ```
 
-\
-
-
 ### isSubsetRt( rt )
 
 다른 ARect 객체가 현재 사각형 내부에 완전히 포함되는지 확인.
@@ -214,9 +178,6 @@ console.log(result);
 false
 ```
 
-\
-
-
 ### isIntersectRt( rt )
 
 다른 ARect객체와 겹치는 부분이 있는지 확인
@@ -228,9 +189,6 @@ false
 const intersects = rect.isIntersectRt(otherRect);
 console.log(intersects);
 ```
-
-\
-
 
 ### isRectEmpty()
 

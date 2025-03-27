@@ -38,7 +38,6 @@
 
 * **Returns** `<Boolean>`
 
-\
 
 
 ### getText()
@@ -47,7 +46,6 @@
 
 * **Returns** `<String>`
 
-\
 
 
 ### getValue()
@@ -58,7 +56,6 @@
 
 * **Returns** `<String>`
 
-\
 
 
 ### setCheckAlign( align )
@@ -71,7 +68,6 @@
 this.radio1.setCheckAlign('left');
 ```
 
-\
 
 
 ### setSelect( isSelect )

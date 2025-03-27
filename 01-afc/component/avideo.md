@@ -53,24 +53,15 @@ const video = new AVideo();
 video.setSource('https://example.com/video.mp4');
 ```
 
-\
-
-
 ### getSource()
 
 현재 설정된 비디오 URL 정보를 반환
-
-\
-
 
 ### setData(data)
 
 비디오 컴포넌트에 저장된 데이터 값을 설정
 
 > data 매개변수는 설정할 데이터를 나타내며, 비디오 컴포넌트의 특정 상태나 속성을 저장하는 데 사용
-
-\
-
 
 ### setMetaData(metadata)
 

@@ -1,6 +1,6 @@
 # ATabBar
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **ATabBar**는 여러 개의 탭 버튼을 포함하는 **탭 바 컴포넌트**
 
@@ -56,7 +56,6 @@
 
 ***
 
-\
 
 
 ## Instance Methods

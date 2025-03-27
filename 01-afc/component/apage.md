@@ -1,6 +1,6 @@
 # APage
 
-> **Extends**: [AContainer](https://wikidocs.net/274983)
+> **Extends**: AContainer
 
 AContainer를 확장한 컴포넌트
 
@@ -98,8 +98,7 @@ var navigator = page.getNavigator();
 
 **Returns** `<Boolean\>`
 
-*   **true**: 이전 페이지로 성공적으로 이동한 경우\
-
+*   **true**: 이전 페이지로 성공적으로 이동한 경우
 
     > 히스토리에 이전 페이지가 존재하여 이동이 가능할 때 반환
 *   **false**: 이전 페이지로 이동할 수 없는 경우

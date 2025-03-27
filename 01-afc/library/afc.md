@@ -14,9 +14,6 @@ Asoosoft Foundation Class(AFC)는 웹 및 모바일 애플리케이션 개발을
 * 키보드 입력 및 터치 이벤트 지원
 * 동적 HTML, CSS, JavaScript 로딩 지원
 
-\
-
-
 ## Constants
 
 ### 버튼 상태
@@ -67,9 +64,6 @@ const result = afc.abs(-10);
 console.log(result); // 10
 ```
 
-\
-
-
 ### afc.absComma( val )
 
 절대값으로 변경 후 3자리마다 콤마(,)를 넣어 반환
@@ -87,9 +81,6 @@ console.log(afc.absComma(0)); // "0"
 console.log(afc.absComma(1234.567)); // "1,234.567" 
 console.log(afc.absComma(-56.789)); // "56.789"
 ```
-
-\
-
 
 ### afc.absCommaIfFixed( val )
 
@@ -109,9 +100,6 @@ console.log(afc.absCommaIfFixed(-56.789));      // "56.79"
 console.log(afc.absCommaIfFixed(0));            // "0"
 ```
 
-\
-
-
 ### afc.absCommaPercent( val )
 
 절대값을 3자리마다 콤마(,)로 변환한 후 % 기호를 추가하여 반환
@@ -129,9 +117,6 @@ console.log(afc.absCommaPercent(-98765.432));
 // "98,765.432%" console.log(afc.absCommaPercent(0)); // "0%"
 ```
 
-\
-
-
 ### afc.absFloor1( value )
 
 절대값 소수점1자리 버림해서 반환
@@ -143,9 +128,6 @@ console.log(afc.absFloor1(12.345)); // "12.3"
 console.log(afc.absFloor1(-98.765)); // "98.7" 
 console.log(afc.absFloor1(0.999)); // "0.9"
 ```
-
-\
-
 
 ### afc.absFloor2( value )
 
@@ -159,9 +141,6 @@ console.log(afc.absFloor2(-98.7654)); // "98.76"
 console.log(afc.absFloor2(0.9999)); // "0.99"
 ```
 
-\
-
-
 ### afc.absFloor2Per( value )
 
 절대값 소수점 2자리 버림해서 % 붙여 반환
@@ -170,9 +149,6 @@ console.log(afc.absFloor2(0.9999)); // "0.99"
 const result = afc.absFloor2Per(-12.3456);
 console.log(result); // "12.34%"
 ```
-
-\
-
 
 ### afc.absPercent( val )
 
@@ -189,9 +165,6 @@ const result = afc.absPercent(50);
 console.log(result); // "50%"
 ```
 
-\
-
-
 ### afc.addComma( val )
 
 천 단위마다 콤마를 추가한 문자열을 반환
@@ -201,17 +174,11 @@ const result = afc.addComma(1000000);
 console.log(result); // "1,000,000"
 ```
 
-\
-
-
 ### afc.addCommaIfFixed( value )
 
 소수점이 있는 숫자일 때 3자리마다 콤마(,) 및 소수점 이하 2자리까지 반올림하여 반환. 소수점이 없는 숫자일 때 3자리마다 콤마(,)를 반환
 
 * **value** `<Number>` 숫자
-
-\
-
 
 ### afc.addPercent( val )
 
@@ -223,9 +190,6 @@ console.log(result); // "1,000,000"
 const result = afc.addPercent(50);
 console.log(result); // "50%"
 ```
-
-\
-
 
 ### afc.androidVersion()
 
@@ -241,17 +205,11 @@ console.log(afc.androidVersion());
 // 안드로이드가 아닐 경우 null 반환`
 ```
 
-\
-
-
 ### afc.beginTimeCheck( msg )
 
 시작시간을 체크하기 위해 세팅
 
 * **msg** `<String>` 출력될 메세지
-
-\
-
 
 ```js
 afc.beginTimeCheck("타이머 시작!"); 
@@ -271,9 +229,6 @@ console.log(afc.capitalAmount(123456789)); // "123,457"
 console.log(afc.capitalAmount(-9876543)); // "-9.88" 
 console.log(afc.capitalAmount(0)); // "0"
 ```
-
-\
-
 
 ### afc.commaPercent( value )
 
@@ -304,9 +259,6 @@ console.log(afc.dateToString(specificDate));
 // "20231225"
 ```
 
-\
-
-
 ### afc.disableLog()
 
 afc.log와 console.log를 해도 표시되지 않게 비활성화
@@ -318,9 +270,6 @@ afc.disableLog();
 console.log("이것은 보이지 않을 로그입니다."); // 출력되지 않음 
 afc.log("이것도 출력되지 않습니다.");
 ```
-
-\
-
 
 ### afc.startTimeCheck( msg )
 
@@ -361,9 +310,6 @@ console.log(afc.floatFix(-123.4567, 2)); // "-123.46" (음수도 동일 적용)
 console.log(afc.floatFix(100, 4)); // "100.0000" (소수점 4자리까지 표현)
 ```
 
-\
-
-
 ### afc.floor( value, pos )
 
 value를 pos자리수 만큼 반올림하여 반환
@@ -376,9 +322,6 @@ value를 pos자리수 만큼 반올림하여 반환
 const result = afc.floor(12.3456, 2);
 console.log(result); // "12.34"
 ```
-
-\
-
 
 ### afc.floor2( value )
 
@@ -403,8 +346,7 @@ console.log(result); // "12.34%"
 * **value** `<Number>` 숫자 값
 * **Returns**: `<String>` 변환된 값 (소수점 두 자리까지 버림 및 % 추가)
 
-\
-
+\\
 
 ### afc.floorPer( value, pos )
 
@@ -416,9 +358,6 @@ console.log(result); // "12.34%"
 ```js
 console.log(afc.floorPer(12.3456, 1)); // "12.3%"
 ```
-
-\
-
 
 ### afc.formatDate( dateNum )
 
@@ -441,9 +380,6 @@ console.log(afc.formatDate2("00000000"));  // "00/00/00" (비정상 값 처리 �
 console.log(afc.formatDate2(""));          // "" (빈 문자열 처리)
 ```
 
-\
-
-
 ### afc.formatDateTime( datetimeNum )
 
 월일시분 텍스트를 `MM/dd HH:mm` 형태로 반환.
@@ -455,9 +391,6 @@ console.log(afc.formatDate2(""));          // "" (빈 문자열 처리)
 const result = afc.formatDateTime('02101530');
 console.log(result); // "02/10 15:30"
 ```
-
-\
-
 
 ### afc.formatMonth( monthNum )
 
@@ -474,9 +407,6 @@ console.log(afc.formatMonth("000000"));  // "0000/00" (비정상 값 처리 주�
 console.log(afc.formatMonth(""));        // "" (빈 문자열 처리)
 ```
 
-\
-
-
 ### afc.formatSecond( t )
 
 시분초(hhMMdd)의 초의 값으로 반환
@@ -490,9 +420,6 @@ console.log(afc.formatSecond("000000")); // 0 (자정)
 console.log(afc.formatSecond("235959")); // 23*3600 + 59*60 + 59 = 86399
 console.log(afc.formatSecond(""));       // NaN (빈 문자열 처리 주의)
 ```
-
-\
-
 
 ### afc.formatTic( datetimeNum )
 
@@ -509,9 +436,6 @@ console.log(afc.formatTic("00000000")); // "00 00:00:00" (비정상 값 처리 �
 console.log(afc.formatTic(""));         // "" (빈 문자열 처리)
 ```
 
-\
-
-
 ### afc.getClassName( funcObj )
 
 객체의 클래스 이름을 반환
@@ -522,9 +446,6 @@ console.log(afc.formatTic(""));         // "" (빈 문자열 처리)
 const className = afc.getClassName(new Date());
 console.log(className); // "Date"
 ```
-
-\
-
 
 ### afc.getChildEventList( baseName )
 
@@ -558,9 +479,6 @@ const eventList = afc.getEventList("AButton");
 console.log(eventList);
 ```
 
-\
-
-
 ### getRandomColor()
 
 랜덤 색상 값을 생성
@@ -576,9 +494,6 @@ const randomColor = afc.getRandomColor();
 console.log(randomColor); // "#A1B2C3"
 ```
 
-\
-
-
 ### afc.getUrlParameter()
 
 현재 URL에서 파라미터를 객체 형태로 추출
@@ -588,17 +503,11 @@ const params = afc.getUrlParameter();
 console.log(params);
 ```
 
-\
-
-
 ### afc.intComma( val )
 
 정수형으로 치환 후 3자리마다 콤마(,)를 붙여 반환
 
 -**val** `<Number>` 숫자
-
-\
-
 
 ```js
 console.log(afc.intComma(1234567.89));  // "1,234,567" (소수점 제거)
@@ -635,18 +544,12 @@ console.log(afc.iosVersion());
 // iOS가 아닐 경우 null 반환
 ```
 
-\
-
-
 ### afc.isDeviceOf( device )
 
 파라미터로 넘어온 device문자열로 디바이스를 구분하여 결과를 반환.
 
 * **Returns**: `<Boolean>`
 * **device** `<String>` 디바이스문자열 ex) afc.isDeviceOf('Android')
-
-\
-
 
 ### afc.loadCss( url )
 
@@ -655,9 +558,6 @@ CSS 파일을 동적으로 로드
 ```js
 afc.loadCss('styles.css');
 ```
-
-\
-
 
 ### afc.loadHtml(trgEle, url, callback, searchValue, newValue)
 
@@ -676,9 +576,6 @@ afc.loadHtml(document.getElementById("content"), "example.html", function(txt) {
     console.log("HTML 로드 완료:", txt);
 });
 ```
-
-\
-
 
 ### afc.loadScript( url )
 
@@ -785,9 +682,6 @@ afc.log("여러 옵션 적용된 로그");
 
 **컴포넌트 정보 없이, 스택 트레이스 포함한 로그가 출력됨**
 
-\
-
-
 ### makeAccText( accInfo, isGroup )
 
 계좌 정보를 기반으로 계좌번호를 포맷팅
@@ -804,18 +698,12 @@ const accInfo = { "D1계좌번호": "123456789012" };
 console.log(afc.makeAccText(accInfo)); // "123-45-6789012"
 ```
 
-\
-
-
 ### afc.makeDummyString( length )
 
 데이터의 길이만큼 더미문자(\*)를 생성하여 반환.
 
 * **Returns**: `<String>`
 * **length** `<Number>` 데이터의 길이
-
-\
-
 
 ### afc.oneHundredMillionAmount( value )
 
@@ -825,9 +713,6 @@ console.log(afc.makeAccText(accInfo)); // "123-45-6789012"
 const result = afc.oneHundredMillionAmount(1000000000);
 console.log(result); // "10"
 ```
-
-\
-
 
 ### afc.returnAsIt( val )
 
@@ -843,9 +728,6 @@ console.log(result); // "10"
 console.log(afc.returnAsIt("Hello")); // "Hello"
 ```
 
-\
-
-
 ### afc.removeComma( val )
 
 콤마가 포함된 문자열에서 콤마를 제거
@@ -854,9 +736,6 @@ console.log(afc.returnAsIt("Hello")); // "Hello"
 const result = afc.removeComma("1,000,000");
 console.log(result); // "1000000"
 ```
-
-\
-
 
 ### afc.removeCss( url )
 
@@ -868,17 +747,13 @@ html DOM에서 스타일시트를 제거
 afc.removeCss('styles.css');
 ```
 
-\
-
-
 ### afc.setLogFilter( filter )
 
 로그를 필터할 문구를 설정
 
 > 이 문구를 기준으로 로그 메시지를 필터링할 수 있습니다.
 
-*   **filter** `<String>` 필터할 문구\
-
+*   **filter** `<String>` 필터할 문구\\
 
     > 이 문구가 로그 메시지에 포함될 경우, 로그가 출력됩니다.
 
@@ -891,17 +766,13 @@ afc.log('This is a SpiderGen log message');  // 출력됨
 afc.log('This is a different log message');  // 출력되지 않음
 ```
 
-\
-
-
 ### afc.setLogOption( option )
 
 로그의 옵션을 설정
 
 > ex ) 컴포넌트 정보를 로그에 포함할지 여부를 설정할 수 있음
 
-*   **option** `<Object>` 로그옵션\
-
+*   **option** `<Object>` 로그옵션\\
 
     > ex ) `{ compElement: false }`는 컴포넌트 요소 정보를 로그에 포함하지 않도록 설정합니다.
 
@@ -912,9 +783,6 @@ afc.setLogOption({ compElement: false });
 // 컴포넌트 정보를 포함하지 않은 로그 출력
 afc.log('This is a log without component information');
 ```
-
-\
-
 
 ### afc.toFixed( num, fixed )
 
@@ -932,9 +800,6 @@ console.log(result);  // "12.35"
 const result2 = afc.toFixed(12.3456, 1);
 console.log(result2);  // "12.3"
 ```
-
-\
-
 
 ### afc.toFixed2( value )
 
@@ -962,19 +827,13 @@ afc.enableUserSelect(true,
 document.getElementById('myElement'));
 ```
 
-\
-
-
 ### afc.enableScrollIndicator()
 
 모든 스크롤 가능한 요소에서 스크롤바를 숨기고 인디케이터 스타일을 적용
 
 ```js
-afc.enableScrollIndicator();
+afc.enableScrollIndicator()
 ```
-
-\
-
 
 ### afc.log( msg )
 
@@ -996,9 +855,6 @@ afc.log('최성식');
 afc.log2('This is a log message');
 ```
 
-\
-
-
 ### afc.stringifyOnce( obj, replacer, indent )
 
 객체를 `JSON 문자열`로 변환하되, 순환 참조를 방지
@@ -1015,9 +871,6 @@ afc.log2('This is a log message');
 const obj = { a: 1, b: 2 };
 console.log(afc.stringifyOnce(obj, null, 2));
 ```
-
-\
-
 
 ### afc.makeCompIdPrefix()
 
@@ -1050,9 +903,6 @@ const merged = afc.mergeObject({ a: 1 }, { b: 2 });
 console.log(merged); // { a: 1, b: 2 }
 ```
 
-\
-
-
 ### afc.loadSync( url )
 
 동기 방식으로 JavaScript 파일을 로드
@@ -1062,9 +912,6 @@ console.log(merged); // { a: 1, b: 2 }
 ```js
 afc.loadSync('example.js');
 ```
-
-\
-
 
 ### afc.getFileSrc( fileName )
 
@@ -1088,9 +935,6 @@ console.log(filePath); // "https://example.com/path/to/image.png"
 afc.setVersionMap({ 'example.js': '1.0.0' });
 ```
 
-\
-
-
 ### afc.removeScript( url )
 
 동적으로 추가된 JavaScript 파일을 제거
@@ -1100,9 +944,6 @@ afc.setVersionMap({ 'example.js': '1.0.0' });
 ```js
 afc.removeScript('example.js');
 ```
-
-\
-
 
 ### afc.extendsClass( child, parent )
 
@@ -1143,9 +984,6 @@ const exists = afc.existScriptSrc('example.js');
 console.log(exists);
 ```
 
-\
-
-
 ### afc.setIndexScriptMap()
 
 인덱스 스크립트 맵을 설정하는 역할.
@@ -1163,9 +1001,6 @@ const scriptMap = {
 afc.setIndexScriptMap(scriptMap);
 ```
 
-\
-
-
 ### afc.refreshApp()
 
 애플리케이션을 강제로 새로고침
@@ -1174,9 +1009,6 @@ afc.setIndexScriptMap(scriptMap);
 afc.refreshApp();
 ```
 
-\
-
-
 ### afc.makeMeta()
 
 메타 태그를 동적으로 생성하여 뷰포트 설정을 조정
@@ -1184,9 +1016,6 @@ afc.refreshApp();
 ```js
 afc.makeMeta();
 ```
-
-\
-
 
 ### afc.changeScale( value, scale )
 
@@ -1215,9 +1044,6 @@ console.log(browserInfo);
 * **Returns**:
   * `<Object>` 브라우저 정보 (이름 및 버전 포함)
 
-\
-
-
 ### afc.deviceCheck()
 
 현재 실행 중인 디바이스 유형을 감지
@@ -1225,9 +1051,6 @@ console.log(browserInfo);
 ```js
 afc.deviceCheck();
 ```
-
-\
-
 
 ### afc.addRule( sheet, selector, styles )
 
@@ -1258,9 +1081,6 @@ console.log(result2); // "　"
 * **Returns**:
   * **String** 변환된 값 (천 단위 콤마 포함, 값이 0이면 공백 문자 반환)
 
-\
-
-
 ### afc.formatTime( time )
 
 시간을 `HH:mm` 형식으로 변환
@@ -1269,9 +1089,6 @@ console.log(result2); // "　"
 const result = afc.formatTime('1530');
 console.log(result); // "15:30"
 ```
-
-\
-
 
 ### afc.formatHMS( seconds )
 
@@ -1286,19 +1103,13 @@ console.log(result); // "01:01:01"
 * **Returns**:
   * `<String>` `HH:mm:ss` 형식의 문자열
 
-\
-
-
 ### afc.switchButtonColor( comp )
 
 버튼의 색상을 변경
 
 ```js
-afc.switchButtonColor(document.getElementById('myButton'));
+afc.switchButtonColor(document.getElementById('myButton'))
 ```
-
-\
-
 
 ### afc.plusfloorPercent(val)
 
@@ -1311,9 +1122,6 @@ afc.switchButtonColor(document.getElementById('myButton'));
 const result = afc.plusfloorPercent(12.3456);
 console.log(result);  // "12.35%"
 ```
-
-\
-
 
 ### afc.sigaTotalAmount( value )
 
@@ -1333,9 +1141,6 @@ const result2 = afc.sigaTotalAmount(-1234567890);
 console.log(result2);  // "-123.46"
 ```
 
-\
-
-
 ### afc.isResize()
 
 화면 크기 조정 여부를 체크하는 메소드
@@ -1348,9 +1153,6 @@ if (afc.isResize) {
     console.log("화면이 리사이즈되지 않았습니다.");
 }
 ```
-
-\
-
 
 ### Date.prototype.format( f )
 
@@ -1371,9 +1173,6 @@ const formattedDate2 = new Date().format('MM/dd/yyyy');
 console.log(formattedDate2);  // "02/10/2025"
 ```
 
-\
-
-
 ### String.prototype.str( len )
 
 **문자열을 반복하여 주어진 길이만큼 확장**하는 메소드
@@ -1383,11 +1182,8 @@ console.log(formattedDate2);  // "02/10/2025"
 ```js
 // 'abc' 문자열을 3번 반복하여 길이 9의 문자열을 생성
 const result = 'abc'.str(3);
-console.log(result);  // "abcabcabc"
+console.log(result);  // "abcabcab
 ```
-
-\
-
 
 ### String.prototype.zf( len )
 
@@ -1407,9 +1203,6 @@ const result2 = '12'.zf(6);
 console.log(result2);  // "000012"
 ```
 
-\
-
-
 ### Number.prototype.zf( len )
 
 **숫자를 문자열로 변환**한 후, **앞에 0을 추가하여 지정된 길이의 문자열을 생성**하는 메소드
@@ -1426,9 +1219,6 @@ const result2 = (12).zf(6);
 console.log(result2);  // "000012"
 ```
 
-\
-
-
 ### String.prototype.replaceAt(inx, searchVal, newVal)
 
 문자열에서 **특정 위치에 있는 부분을 다른 값으로 교체**하는 메소드
@@ -1442,9 +1232,6 @@ console.log(result2);  // "000012"
 const result = 'Hello World'.replaceAt(6, 'World', 'XX');
 console.log(result);  // "Hello XX"
 ```
-
-\
-
 
 ### window.onunhandledrejection
 
@@ -1473,9 +1260,6 @@ window.onerror = function(message, url, lineNumber, colNumber, error) {
 };        
 ```
 
-\
-
-
 ### afc.loadCSSIfNotLoaded()
 
 스타일시트가 로드되지 않았을 경우 이를 감지하고 다시 로드
@@ -1483,9 +1267,6 @@ window.onerror = function(message, url, lineNumber, colNumber, error) {
 ```js
 afc.loadCSSIfNotLoaded();
 ```
-
-\
-
 
 ### afc.scriptWait
 
@@ -1497,9 +1278,6 @@ afc.scriptWait.waitAllProm().then(function(values) {
     console.log('모든 스크립트가 로드 완료되었습니다');
 });
 ```
-
-\
-
 
 ### afc.queryReady( acomp, callback )
 
@@ -1516,9 +1294,6 @@ afc.queryReady(myComponent, function() {
 });
 ```
 
-\
-
-
 ### afc.qryWait
 
 비동기적으로 로드되는 쿼리 작업이 완료될 때까지 대기하는 객체
@@ -1530,9 +1305,6 @@ afc.qryWait.waitAllProm().then(function(values) {
     console.log('모든 쿼리가 로드 완료되었습니다');
 });
 ```
-
-\
-
 
 ### afc.isLoadCache()
 
@@ -1575,9 +1347,6 @@ afc.loadHtmlSync(
 );
 ```
 
-\
-
-
 ### afc.makeCompIdPrefix()
 
 고유한 컴포넌트 ID 접두사를 생성하는 메소드
@@ -1591,5 +1360,3 @@ afc.loadHtmlSync(
 const prefix = afc.makeCompIdPrefix();
 console.log(prefix); // 예: '_1--'
 ```
-
-\

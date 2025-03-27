@@ -6,7 +6,6 @@
 
 > 유동적인 레이아웃을 형성할 수 있는 컴포넌트로, 화면 크기와 컴포넌트 크기에 따라 유연하게 배치
 
-\
 
 
 ## Instance Methods
@@ -25,7 +24,6 @@ const result = this.flexLayout.getCompIndex(this.btn2);
 console.log(result); // 1
 ```
 
-\
 
 
 ### getFlexAlign( index )
@@ -44,7 +42,6 @@ console.log(result);
 auto    
 ```
 
-\
 
 
 ### getFlexBasis( index )
@@ -64,7 +61,6 @@ console.log(result);
 auto   
 ```
 
-\
 
 
 ### getFlexDirection()
@@ -107,7 +103,6 @@ console.log(result);
 1       
 ```
 
-\
 
 
 ### getFlexOrder( index )
@@ -133,7 +128,6 @@ console.log(result);
 2    
 ```
 
-\
 
 
 ### getFlexShrink( index )
@@ -157,7 +151,6 @@ console.log(result);
 1		  
 ```
 
-\
 
 
 ### getFlexStringVal( index, valType )
@@ -178,7 +171,6 @@ console.log(result);
 0px		  
 ```
 
-\
 
 
 ### getFlexVal( index, valType )
@@ -199,7 +191,6 @@ console.log(result);
 0px 	
 ```
 
-\
 
 
 ### getFlexPadding( index )
@@ -220,7 +211,6 @@ console.log(result);
 0px 
 ```
 
-\
 
 
 ### getFlexMargin( index )
@@ -241,7 +231,6 @@ console.log(result);
 0px 
 ```
 
-\
 
 
 ### copyFlexProperty( srcComp )
@@ -257,7 +246,6 @@ const srcComp = this.flexLayout.getItemComp(0);  // 첫 번째 아이템 컴포�
 this.flexLayout.copyFlexProperty(srcComp);  // 첫 번째 아이템의 flex 속성 복사
 ```
 
-\
 
 
 ### copyItemProperty( srcComp, inx )
@@ -274,7 +262,6 @@ const srcComp = this.flexLayout.getItemComp(0);  // 첫 번째 아이템 컴포�
 this.flexLayout.copyItemProperty(srcComp, 1);  // 첫 번째 컴포넌트의 속성을 두 번째 컴포넌트에 복사
 ```
 
-\
 
 
 ### initLayoutComp( evtListener )
@@ -289,7 +276,6 @@ this.flexLayout.copyItemProperty(srcComp, 1);  // 첫 번째 컴포넌트의 속
 this.flexLayout.initLayoutComp(eventListener);
 ```
 
-\
 
 
 ### layComponent( acomp, inx, flexGrow )
@@ -309,7 +295,6 @@ btn.init();
 const item = this.flexLayout.layComponent(btn, 2, 1); //2번째 아이템 앞에 같은 너비로 추가한다.
 ```
 
-\
 
 
 ### setFlexAlign( index, alignSelf )
@@ -326,7 +311,6 @@ index 순번에 있는 아이템의 align-self 값을 지정한다.
 this.flexLayout.setFlexAlign(1, 'center');
 ```
 
-\
 
 
 ### setFlexBasis( index, flexBasis )
@@ -344,7 +328,6 @@ index 순번에 있는 아이템의 flex-basis 값을 지정. flex-basis는 아�
 this.flexLayout.setFlexBasis(0, 10);
 ```
 
-\
 
 
 ### setFlexGrow( index, flexGrow )
@@ -364,7 +347,6 @@ this.flexLayout.setFlexGrow(1,1);
 this.flexLayout.setFlexGrow(2,1);
 ```
 
-\
 
 
 ### setFlexOrder( index, flexOrder )
@@ -381,7 +363,6 @@ this.flexLayout.setFlexGrow(2,1);
 this.flexLayout.setFlexOrder(0,1);
 ```
 
-\
 
 
 ### setFlexShrink( index, flexShrink )
@@ -398,7 +379,6 @@ this.flexLayout.setFlexOrder(0,1);
 this.flexLayout.setFlexShrink(0, 2);
 ```
 
-\
 
 
 ### setFlexVal( index, valType, val )
@@ -415,7 +395,6 @@ index 순번 아이템의 flex css 속성중 valType 명의 속성값을 val 값
 this.flexLayout.setFlexVal(0, 'left','100px');
 ```
 
-\
 
 
 ### indexOfItem( item )
@@ -437,7 +416,6 @@ console.log(result); // 0
 0 	
 ```
 
-\
 
 
 ### getItem( inx )
@@ -458,7 +436,6 @@ console.log(result);
 jQuery.fn.init [div, prevObject: jQuery.fn.init(2)]
 ```
 
-\
 
 
 ### getAllLayoutComps()
@@ -473,7 +450,6 @@ const comps = this.flexLayout.getAllLayoutComps();
 console.log(comps);  // 레이아웃 내 모든 컴포넌트 출력
 ```
 
-\
 
 
 ### getItemComp( inx )
@@ -496,7 +472,6 @@ AButton{element:button ... }
 bt2
 ```
 
-\
 
 
 ### removeAllItems()
@@ -518,7 +493,6 @@ console.log(this.flexLayout.getAllLayoutComps());
 []
 ```
 
-\
 
 
 ### refreshFlexLayout()
@@ -530,7 +504,6 @@ console.log(this.flexLayout.getAllLayoutComps());
 this.flexLayout.refreshFlexLayout();
 ```
 
-\
 
 
 ### collapseAll()
@@ -563,7 +536,6 @@ console.log(this.flexLayout.getFlexVal(1, 'padding'));
 10px
 ```
 
-\
 
 
 ### setFlexMargin( index, margin )
@@ -588,6 +560,5 @@ console.log(this.flexLayout.getFlexVal(1, 'margin'));
 10px
 ```
 
-\
 \
 \

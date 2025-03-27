@@ -1,6 +1,6 @@
 # ATextArea
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **ATextArea**는 **멀티라인 텍스트 입력을 위한 컴포넌트**
 
@@ -10,8 +10,7 @@
 
 ### isTabable `<Boolean>`
 
-탭(Tab) 키를 사용하여 이동 가능한지 여부를 설정\
-
+탭(Tab) 키를 사용하여 이동 가능한지 여부를 설정\\
 
 > 기본값: true
 
@@ -19,14 +18,12 @@
 
 ### isTimerChange `<Boolean>`
 
-**텍스트 변경을 감지하는 타이머 실행 여부**를 결정\
-
+**텍스트 변경을 감지하는 타이머 실행 여부**를 결정\\
 
 > 기본값: false
 
 ***
 
-\
 
 
 ## Instance Methods
@@ -96,8 +93,7 @@ console.log(padding);
 
 ### getPlaceholder()
 
-플레이스홀더(Placeholder) 값을 반환\
-
+플레이스홀더(Placeholder) 값을 반환\\
 
 > 입력된 값이 없을 때 표시되는 텍스트
 

@@ -104,9 +104,6 @@ resizeManager.updateBarPos();
 
 ***
 
-\
-
-
 ## Example Usage
 
 ```js

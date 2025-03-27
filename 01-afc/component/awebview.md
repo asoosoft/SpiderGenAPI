@@ -10,22 +10,13 @@
 
 웹뷰를 구성하고있는 iframe 태그
 
-\
-
-
 ### maxScale
 
 웹뷰의 scale 최대값
 
-\
-
-
 ### minScale
 
 웹뷰의 scale 최소값
-
-\
-
 
 ## Instance Methods
 
@@ -33,17 +24,11 @@
 
 웹뷰의 내용을 모두 지우고 빈페이지로 만듬.
 
-\
-
-
 ### enableZoom( enable )
 
 웹뷰의 확대,축소 기능의 활성여부를 지정
 
 * **enable** `<Boolean>` 활성여부
-
-\
-
 
 ### getDoc()
 
@@ -51,17 +36,11 @@
 
 * **Returns** `<Document>`
 
-\
-
-
 ### getScrollEle()
 
 웹뷰의 contentDocument에서 body 요소를 반환
 
 * **Returns** `<HTMLElement>`
-
-\
-
 
 ### getUrl()
 
@@ -69,24 +48,15 @@
 
 * **Returns** `<String>`
 
-\
-
-
 ### getWnd()
 
 웹뷰의 contentWindow 를 반환
 
 * **Returns** `<contentWindow>`
 
-\
-
-
 ### reload()
 
 웹뷰를 리로드
-
-\
-
 
 ### scrollOffset( offset )
 
@@ -98,9 +68,6 @@
 this.webview.scrollOffset(50);
 ```
 
-\
-
-
 ### scrollTo( pos )
 
 매개변수 pos값 위치로 문서를 스크롤
@@ -111,29 +78,17 @@ this.webview.scrollOffset(50);
 this.webview.scrollTo(50);
 ```
 
-\
-
-
 ### scrollToBottom()
 
 문서의 최하단으로 스크롤
-
-\
-
 
 ### scrollToCenter()
 
 문서의 가운데로 스크롤
 
-\
-
-
 ### scrollToTop()
 
 문서의 최상단으로 스크롤
-
-\
-
 
 ### scrollBugFix()
 
@@ -176,9 +131,6 @@ onDocLoad(comp, doc)
 };
 ```
 
-\
-
-
 ### setHtml( html )
 
 웹뷰 document에 매개변수 html 을 지정.
@@ -189,8 +141,6 @@ onDocLoad(comp, doc)
 this.webview.setHtml('<span>샘플</span>');
 ```
 
-\
-\
 
 
 ### setUrl( url )
@@ -225,9 +175,6 @@ this.webview.setScale(2.0);
 this.webview.applyScale();
 ```
 
-\
-
-
 ### zoom( ratio )
 
 현재의 스케일에서 매개변수 ratio 의 비율만큼 확대,축소.
@@ -247,9 +194,6 @@ this.webview.zoom(-0.1) // 현재 배율에서 10% 축소
 this.webview.resetZoom()
 ```
 
-\
-
-
 ### setScale()
 
-웹뷰영역의 스케일을 지정.
+웹 뷰 영역의 스케일을 지정.

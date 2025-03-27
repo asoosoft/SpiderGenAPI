@@ -6,7 +6,6 @@
 
 > 동적으로 행과 열을 추가/삭제하고, 셀 병합, 크기 조절 등의 기능을 통해 유연한 레이아웃 구성이 가능
 
-\
 
 
 ## Instance Methods
@@ -149,7 +148,6 @@ console.log(colCount); // 현재 열 개수 출력
 
 특정 인덱스의 로우를 반환.
 
-\
 
 
 ### getRows()
@@ -160,7 +158,6 @@ console.log(colCount); // 현재 열 개수 출력
 
 특정 로우의 높이값을 반환.
 
-\
 
 
 ### insertCol( col, isAfter )
@@ -169,7 +166,6 @@ console.log(colCount); // 현재 열 개수 출력
 
 * **isAfter** `<Boolean>` 앞인지 뒤인지 여부
 
-\
 
 
 ### insertRow( row, isAfter )
@@ -178,7 +174,6 @@ console.log(colCount); // 현재 열 개수 출력
 
 * **isAfter** `<Boolean>` 앞인지 뒤인지 여부
 
-\
 
 
 ### layComponent( acomp, cell, width, height )
@@ -198,7 +193,6 @@ const cell = gridLayout.getCell(2,1);
 const item = gridLayout.layComponent(btn, cell);
 ```
 
-\
 
 
 ### layComponentAt( acomp, row, col, width, height )
@@ -217,7 +211,6 @@ btn.init();
 const item = gridLayout.layComponentAt(btn, 2, 1);
 ```
 
-\
 
 
 ### mergeCol( row, col, span )
@@ -233,7 +226,6 @@ const item = gridLayout.layComponentAt(btn, 2, 1);
 gridLayout.mergeCol(1,1,2);
 ```
 
-\
 
 
 ### mergeRow( row, col, span )
@@ -249,7 +241,6 @@ gridLayout.mergeCol(1,1,2);
 gridLayout.mergeRow(2,1,3);
 ```
 
-\
 
 
 ### reduceColSpanCount( row, col )
@@ -259,7 +250,6 @@ gridLayout.mergeRow(2,1,3);
 * **row** `<Number>` row 인덱스
 * **col** `<Number>` col 인덱스
 
-\
 
 
 ### removeCol( col )
@@ -274,7 +264,6 @@ gridLayout.mergeRow(2,1,3);
 gridLayout.removeCol(1); // 1번째 열 삭제 후 자동 정리
 ```
 
-\
 
 
 ### removeRow( row )
@@ -287,7 +276,6 @@ gridLayout.removeCol(1); // 1번째 열 삭제 후 자동 정리
 gridLayout.removeRow(2); // 2번째 행 삭제 후 레이아웃 자동 정리
 ```
 
-\
 
 
 ### setCellAlign( row, col, align )
@@ -303,7 +291,6 @@ gridLayout.removeRow(2); // 2번째 행 삭제 후 레이아웃 자동 정리
 gridLayout.setCellAlign(1,1,'center');
 ```
 
-\
 
 
 ### setCellPadding( row, col, padding )
@@ -319,7 +306,6 @@ gridLayout.setCellAlign(1,1,'center');
 gridLayout.setCellPadding(1,2,5);
 ```
 
-\
 
 
 ### setCellValign( row, col, align )
@@ -335,7 +321,6 @@ gridLayout.setCellPadding(1,2,5);
 gridLayout.setCellValign(1,1,'middle');
 ```
 
-\
 
 
 ### setCols( cols )
@@ -357,7 +342,6 @@ gridLayout.setCellValign(1,1,'middle');
 grid.setColSize(1, '20px');
 ```
 
-\
 
 
 ### setLayoutAlign( align )
@@ -370,7 +354,6 @@ grid.setColSize(1, '20px');
 gridLayout.setLayoutAlign('center');
 ```
 
-\
 
 
 ### setLayoutPadding( padding )
@@ -379,7 +362,6 @@ gridLayout.setLayoutAlign('center');
 
 * **padding** `<Object>` padding 값
 
-\
 
 
 ### setLayoutSize( rowSizeArr, colSizeArr )
@@ -394,7 +376,6 @@ const size = [50, 20, '30px'];
 gridLayout.setLayoutSize(size, size);
 ```
 
-\
 
 
 ### setRows( rows )
@@ -403,7 +384,6 @@ gridLayout.setLayoutSize(size, size);
 
 * **rows** `<Number>` 개수
 
-\
 
 
 ### setRowsDivPercent()
@@ -418,7 +398,6 @@ gridLayout.setLayoutSize(size, size);
 gridLayout.setRowSize(1, '15px');
 ```
 
-\
 
 
 ### splitCell( row, col )
@@ -429,19 +408,16 @@ gridLayout.setRowSize(1, '15px');
 gridLayout.splitCell(0,1);
 ```
 
-\
 
 
 ### splitCol( row, col )
 
 그리드 레이아웃의 특정 셀이 세로로 병합되어 있다면 분리 (해당 셀의 colspan을 제거)
 
-\
 
 
 ### splitRow( row, col )
 
 그리드 레이아웃의 특정 셀이 가로로 병합되어 있다면 분리 (해당 셀의 rowspan을 제거)
 
-\
 \

@@ -46,9 +46,6 @@ true일 경우, 키보드가 화면에 표시될 때 웹뷰의 크기를 조정
 
 ***
 
-\
-
-
 ### **Class Methods**
 
 #### getFocus(doc)
@@ -140,9 +137,6 @@ KeyboardManager.inputScrollToCenter(inputField, true);
 ```
 
 ***
-
-\
-
 
 ### **Usage Example**
 
