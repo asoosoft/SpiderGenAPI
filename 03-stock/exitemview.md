@@ -7,17 +7,13 @@
 종목을 선택할 수 있는 뷰 컴포넌트로,\
 드롭다운, 검색, 최근 선택한 종목 등을 관리하는 기능을 제공.
 
-\
-
-
 ## Properties
 
 ### frwName `<String>`
 
 해당 뷰가 속한 프레임워크 네임스페이스를 정의
 
-* **default** : stock\
-
+* **default** : stock
 
 ### dropMaxCount `<Number>`
 
@@ -30,9 +26,6 @@ dropView에 표시되는 종목 최대 갯수
 this.itemView.setDropMaxCount(10);
 ```
 
-\
-
-
 ### typeArr `<Array>`
 
 종목 정보를 담고 있는 배열.
@@ -43,9 +36,6 @@ this.itemView.setDropMaxCount(10);
 const types = ["KOSPI", "KOSDAQ"];
 this.itemView.setTypeArr(types);
 ```
-
-\
-
 
 ### **exceptArr** `<Array>`
 
@@ -75,9 +65,6 @@ const itemInfo = this.itemView.getItemInfo();
 * **true**이면 최근 검색한 종목이 가장 앞으로 추가.
 * **default** : false
 
-\
-
-
 ## Static Methods
 
 ### EXItemView.getHistoryInfo()
@@ -90,9 +77,6 @@ const itemInfo = this.itemView.getItemInfo();
 EXItemView.getHistoryInfo();
 ```
 
-\
-
-
 ### EXItemView.getMasterInfo()
 
 종목 정보를 관리하는 객체를 반환.
@@ -102,9 +86,6 @@ EXItemView.getHistoryInfo();
 ```js
 EXItemView.getMasterInfo();
 ```
-
-\
-
 
 ## Instance Methods
 
@@ -119,9 +100,6 @@ const itemInfo = this.itemView.getItemInfo();
 console.log(itemInfo);
 ```
 
-\
-
-
 ### openDrop( itemsArr )
 
 첫 번째 컴포넌트 아래에 **dropView**를 출력
@@ -135,9 +113,6 @@ const itemsArr = EXItemView.getHistoryInfo().search();
 this.itemView.openDrop(itemsArr);
 ```
 
-\
-
-
 ### openSearchWindow()
 
 종목 검색을 위한 풀팝업을 로드.
@@ -147,9 +122,6 @@ this.itemView.openDrop(itemsArr);
 ```js
 this.itemView.openSearchWindow();
 ```
-
-\
-
 
 ### setHistoryInfo( obj )
 
@@ -161,10 +133,9 @@ this.itemView.openSearchWindow();
     EXItemView.setHistoryInfo(new HistoryInfo());
     ```
 
-    \
 
 
-    #### setItemInfo( itemInfo, isReport )
+    **setItemInfo( itemInfo, isReport )**
 
     특정 종목을 선택하여 종목뷰에 반영 isReport가 **true**이면 **change** 이벤트가 발생.
 
@@ -183,10 +154,9 @@ this.itemView.openSearchWindow();
     this.itemView.setItemInfo(['005930', '삼성전자', '001'], true);
     ```
 
-    \
 
 
-    #### setMasterInfo( obj )
+    **setMasterInfo( obj )**
 
     종목뷰에서 사용할 **종목 마스터 객체**를 설정
 
@@ -202,10 +172,9 @@ this.itemView.openSearchWindow();
     EXItemView.setMasterInfo(new MasterInfo());
     ```
 
-    \
 
 
-    #### setText( text )
+    **setText( text )**
 
     종목 검색어를 설정.
 
@@ -215,10 +184,9 @@ this.itemView.openSearchWindow();
     EXItemView.setText("삼성전자");
     ```
 
-    \
 
 
-    #### getItem()
+    **getItem()**
 
     현재 설정된 종목 객체를 반환.
 
@@ -228,10 +196,9 @@ this.itemView.openSearchWindow();
     EXItemView.getItem();
     ```
 
-    \
 
 
-    #### setTypeArr( typeArr )
+    **setTypeArr( typeArr )**
 
     종목 타입 배열을 저장.
 
@@ -241,10 +208,9 @@ this.itemView.openSearchWindow();
     EXItemView.setTypeArr(["KOSPI", "KOSDAQ"]);
     ```
 
-    \
 
 
-    #### getTypeArr()
+    **getTypeArr()**
 
     설정된 종목 타입 배열을 반환.
 
@@ -254,10 +220,9 @@ this.itemView.openSearchWindow();
     EXItemView.getTypeArr();
     ```
 
-    \
 
 
-    #### setExceptArr( exceptArr )
+    **setExceptArr( exceptArr )**
 
     종목 검색시 제외할 키 배열을 저장.
 
@@ -267,10 +232,9 @@ this.itemView.openSearchWindow();
     EXItemView.setExceptArr(["우선주", "외국기업"]);
     ```
 
-    \
 
 
-    #### getExceptArr()
+    **getExceptArr()**
 
     제외할 키 배열을 반환.
 
@@ -280,10 +244,9 @@ this.itemView.openSearchWindow();
     const excludedKeys = EXItemView.getExceptArr();
     ```
 
-    \
 
 
-    #### setDropMaxCount( dropMaxCount )
+    **setDropMaxCount( dropMaxCount )**
 
     dropView에 표시할 최대 종목 개수를 설정.
 
@@ -293,10 +256,9 @@ this.itemView.openSearchWindow();
     EXItemView.setDropMaxCount(dropMaxCount);
     ```
 
-    \
 
 
-    #### getDropMaxCount()
+    **getDropMaxCount()**
 
     dropView에 표시할 최대 종목 개수를 반환.
 
@@ -306,32 +268,28 @@ this.itemView.openSearchWindow();
     const maxCount = EXItemView.getDropMaxCount();
     ```
 
-    \
 
 
-    #### onSearchTextFieldChange()
+    **onSearchTextFieldChange()**
 
     검색 윈도우에서 텍스트 입력 변경 시 호출되는 함수.
 
-    \
 
 
-    #### onSearchGridSelect()
+    **onSearchGridSelect()**
 
     검색 윈도우에서 종목을 선택했을 때 호출되는 함수.
 
-    \
 
 
-    #### onDropGridSelect()
+    **onDropGridSelect()**
 
     드롭다운에서 종목을 선택했을 때 호출되는 함수.
 
     \
-    \
 
 
-    #### resetSearch()
+    **resetSearch()**
 
     검색 필드를 초기화.
 
@@ -339,7 +297,7 @@ this.itemView.openSearchWindow();
     this.itemView.resetSearch();
     ```
 
-    #### setPlaceholder( placeholder )
+    **setPlaceholder( placeholder )**
 
     검색 필드의 placeholder를 설정
 
@@ -347,7 +305,7 @@ this.itemView.openSearchWindow();
     this.itemView.setPlaceholder("종목을 입력하세요.");
     ```
 
-    #### filterItems( criteria )
+    **filterItems( criteria )**
 
     특정 조건을 기반으로 종목 리스트를 필터링.
 
@@ -357,7 +315,7 @@ this.itemView.openSearchWindow();
     this.itemView.filterItems(item => item[2] === "KOSDAQ");
     ```
 
-    #### getRecentItems()
+    **getRecentItems()**
 
     최근 검색한 종목 리스트를 반환.
 

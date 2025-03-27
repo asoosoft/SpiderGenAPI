@@ -316,9 +316,6 @@
 
 ***
 
-\
-
-
 ## Instance Methods
 
 ### init(t, s)
@@ -557,7 +554,7 @@ const colorInfo = compareChart.extractColorObj();
 
 터치 및 줌 이벤트를 초기화
 
-\*\*setTouchEvent()\*\*와 \*\*setZoomEvent()\*\*를 호출
+setTouchEvent()와 setZoomEvent()를 호출
 
 ```js
 init(context, evtListener) {

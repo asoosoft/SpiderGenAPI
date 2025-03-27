@@ -1,15 +1,12 @@
 # EXMiniChart
 
-> **Extends**: [BaseChart](https://wikidocs.net/275972)
+> **Extends**: BaseChart
 
 **EXMiniChart** 는 **주식 데이터(가격 등)를 시각적으로 표시할 수 있는 미니 차트를 제공**.
 
 이 클래스는 **실시간 주식 가격 차트나, 특정 기간의 가격 변화를 표시**하는 데 적합하며, **가격 변동에 따른 차트의 색상 및 스타일을 조정**.
 
 ## Instance Variables
-
-\
-
 
 ### basePrice `<Number>`
 
@@ -142,9 +139,6 @@
 차트 캔버스를 그리기 위한 2D 렌더링 컨텍스트
 
 ***
-
-\
-
 
 ## Instance Methods
 

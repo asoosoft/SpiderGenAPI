@@ -8,9 +8,6 @@ EXJisooChart는 금융 데이터를 시각적으로 표현하는 차트 컴포�
 
 > 이 차트는 확대/축소, 터치 이벤트, 자동 스크롤 등의 기능을 지원하며, 실시간 데이터 업데이트 및 사용자 인터랙션을 위한 다양한 메서드를 제공합니다.
 
-\
-
-
 ## Properties
 
 ### delegator `<Object>`
@@ -27,9 +24,6 @@ chart.setDelegator({
 });
 ```
 
-\
-
-
 ### divisionVal `<Number>`
 
 차트 데이터의 값을 특정 기준에 따라 나누어 표현할 때 사용되는 값.
@@ -40,17 +34,11 @@ chart.setDelegator({
 chart.setDivisionVal(100);
 ```
 
-\
-
-
 ### preScale `<Number>`
 
 현재 차트가 그려진 확대/축소 비율을 나타냄.
 
 * **default** 1
-
-\
-
 
 ### rateVal `<Number>`
 
@@ -64,29 +52,17 @@ chart.setDivisionVal(100);
 chart.zoomInOut(1.2); // 1.2배 확대
 ```
 
-\
-
-
 ### zoomState `<Number>`
 
-현재 줌 상태를 나타내는 값으로, 확대, 축소 등의 상태를 추적하는 데 사용 됨
-
-\
-
+현재 줌 상태를 나타내는 값으로, 확대, 축소 등의 상태를 추적하는 데 사용&#x20;
 
 ### lastDist `<Number>`
 
 줌 동작 시 사용자의 두 손가락 간의 거리값을 저장하는 변수로, 줌 동작을 부드럽게 제어하는 데 사용 됨.
 
-\
-
-
 ### scollSX `<Number>`
 
 스크롤 시작 위치를 나타내며, 차트의 이동 방향을 판단하는 데 활용 됨.
-
-\
-
 
 ### speed `<Number>`
 
@@ -94,24 +70,15 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 > 사용자의 스와이프 속도에 따라 스크롤이 조정 됨.
 
-\
-
-
 ### mStartTime `<Number>`
 
 사용자가 터치를 시작한 시간을 저장하는 변수.
 
 > 이를 통해 스크롤 속도를 계산할 수 있음.
 
-\
-
-
 ### mOldTime `<Number>`
 
 터치를 끝낸 시간을 기록하여 스크롤 가속도를 조정하는 데 사용 됨.
-
-\
-
 
 ### mStartX `<Number>`
 
@@ -119,50 +86,29 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 > 이를 통해 스크롤 방향과 속도를 계산할 수 있음.
 
-\
-
-
 ### mEndX `<Number>`
 
 터치를 끝낸 X 좌표값을 저장.
-
-\
-
 
 ### mScrollLR `<Boolean>`
 
 스크롤이 왼쪽에서 오른쪽으로 이동하는지, 혹은 오른쪽에서 왼쪽으로 이동하는지를 나타내는 불리언 값.
 
-\
-
-
 ### timer `<Number>`
 
 **autoScroll** 메서드에서 **setTimeout**의 반환값을 저장하는 변수로, 자동 스크롤 동작을 제어하는 데 사용 됨.
 
-\
-
-
 ### startIdx `<Number>`
 
-현재 차트에서 표시되고 있는 데이터의 시작 인덱스. 스크롤 이동 시 업데이트.
-
-\
-
+현재 차트에서 표시되고 있는 데이터의 시작 인덱스. 스크롤 이동 시 업데이트
 
 ### startLineX `<Number>`
 
 차트에서 데이터가 시작되는 X 좌표를 나타냄.
 
-\
-
-
 ### endIdx `<Number>`
 
 현재 차트에서 표시되고 있는 데이터의 끝 인덱스. **startIdx**와 함께 스크롤 범위를 결정하는 데 사용 됨.
-
-\
-
 
 ### BAR\_CNT `<Number>`
 
@@ -170,43 +116,25 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 > 이 값은 차트의 해상도와 설정에 따라 변동될 수 있음.
 
-\
-
-
 ### prdCls `<Number>` (0:월, 1:주, 2:일, 5:분, 7:틱)
 
 차트에서 사용할 날짜 또는 시간 단위를 설정하는 값.
-
-\
-
 
 ### dateformatFunc `<Function Array>`
 
 시간 및 날짜를 특정 형식으로 변환하는 함수들의 배열. **prdCls** 값을 기반으로 적절한 포맷이 선택 됨.
 
-\
-
-
 ### dateformat `<Function>`
 
 현재 **prdCls** 값에 따라 설정된 날짜/시간 포맷 함수.
-
-\
-
 
 ### dashType `<Array>`
 
 차트의 가로 및 세로 구분선을 그릴 때 사용되는 대시 배열. 이 값을 조정하면 점선 스타일을 변경할 수 있음.
 
-\
-
-
 ### TEXT\_SIZE `<Number>`
 
 차트 내에서 텍스트의 크기를 나타냄. 화면 크기에 따라 자동으로 조정될 수도 있음.
-
-\
-
 
 ### colorObj `<Object>`
 
@@ -224,18 +152,12 @@ chart.zoomInOut(1.2); // 1.2배 확대
 }
 ```
 
-\
-
-
 ### ROW\_CNT `<Number>`
 
 차트 내 금액 단위를 구분하는 행(row)의 개수를 나타냄.\
 이 값이 클수록 차트의 세로축이 더 촘촘하게 구분되며, 작은 값일수록 간격이 넓어짐.
 
 * **default** 14
-
-\
-
 
 ### AM\_R\_WIDTH `<Number>`
 
@@ -245,9 +167,6 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 * **default** 100
 
-\
-
-
 ### AM\_L\_WIDTH `<Number>`
 
 차트의 왼쪽 금액 표시 영역(좌측 레이블 영역)의 너비를 정의.
@@ -256,18 +175,12 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 * **default** 0
 
-\
-
-
 ### MAX\_BAR\_W `<Number>`
 
 봉차트(캔들 차트)의 최대 봉 너비를 설정.\
 줌인(확대)할 때 봉 차트가 확장될 수 있는 최대 너비를 제한.
 
 * **default** 80
-
-\
-
 
 ### DEF\_BAR\_W `<Number>`
 
@@ -276,18 +189,12 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 * **default** 8
 
-\
-
-
 ### BAR\_TERM `<Number>`
 
 봉차트 간의 간격을 설정.\
 값이 `0`이면 봉들이 붙어 보이며, 값을 증가시키면 봉들 사이의 간격이 증가.
 
 * **default** 0
-
-\
-
 
 ### upGrpMaxAm `<Number>`
 
@@ -296,18 +203,12 @@ chart.zoomInOut(1.2); // 1.2배 확대
 
 * **default** 0
 
-\
-
-
 ### upGrpMinAm `<Number>`
 
 상단 차트에서 나타낼 수 있는 최소 금액 값을 나타냄.\
 차트가 렌더링될 때, 이 값에 따라 y축의 최소값이 결정.
 
 * **default** 0
-
-\
-
 
 ### pos `<Object>`
 
@@ -336,9 +237,6 @@ chart.zoomInOut(1.2); // 1.2배 확대
 	barTot: 0           //봉차트 너비에 봉과 봉사이의 간격을 더한값(한봉이 그려지는 영역)
 };
 ```
-
-\
-
 
 ### compLeft `<Number>`
 
@@ -380,18 +278,12 @@ EXJisooChart.prototype.drawDashedLine = function(ctx, x1, y1, x2, y2, dashArray)
 > 내부적으로 `drawBackLine()`을 호출하여 배경선을 그리고 데이터를 시각화.
 
 ```js
-chart.drawGraph();
+chart.drawGraph(
 ```
-
-\
-
 
 ### resetData()
 
 지수차트 데이터를 초기화.
-
-\
-
 
 ### setColors( colors )
 
@@ -405,11 +297,8 @@ chart.drawGraph();
       	DOT: '#5d5d5d', //도트색
       	LINE: '#F82008', //라인색
       	START: '#00ff00', //그라디언트 시작색
-      	END: 'rgba(0, 250, 0, 0.0)' //그라디언트 끝색
+      	END: 'rgba(0, 250, 0, 0.0)' //그라디언트 끝
     ```
-
-\
-
 
 ### setData( data )
 
@@ -417,16 +306,12 @@ chart.drawGraph();
 
 * **data** `<Array>` \[\[일시, 시가, 고가, 저가, 종가, 누적거래량, 누적거래 대금],...]
 
-\
-
-
 ### setDelegator( delegator )
 
 delegator를 셋팅.
 
 * **delegator** `<Object>` 이벤트를 받을 객체
 
-\
 
 
 ### setDivisionVal( divisionVal )
@@ -435,22 +320,15 @@ delegator를 셋팅.
 
 * **divisionVal** `<Number>` 나눗셈할 값
 
-\
-
-
 ### setTitle( title )
 
 지수차트 타이틀 문구를 셋팅.
 
 * **title** `<String>` 타이틀 문구
 
-\
-
-
 ### initEvent()
 
-터치이벤트와 줌이벤트를 셋팅.\
-
+터치 이벤트와 줌 이벤트를 세팅.
 
 ### updatePosition( pWidth, pHeight )
 
@@ -459,15 +337,9 @@ delegator를 셋팅.
 * **pWidth** `<Number>` 업데이트 할 너비
 * **pHeight** `<Number>` 업데이트 할 높이
 
-\
-
-
 ### setZoomEvent()
 
 줌 이벤트를 설정. 확대 축소 비율은 점점 커짐.
-
-\
-
 
 ### getTitle()
 
@@ -475,18 +347,12 @@ delegator를 셋팅.
 
 * **Returns** `<String>`
 
-\
-
-
 ### calcPosition( elWidth, elHeight )
 
 컴포넌트의 너비와 높이값을 이용하여 canvas에 들어갈 영역 x, y값을 설정
 
 * **elWidth** `<Number>` 컴포넌트 너비
 * **elHeight** `<Number>` 컴포넌트 높이
-
-\
-
 
 ### setIsFirst( isFirst )
 
@@ -497,9 +363,6 @@ delegator를 셋팅.
 ```js
 chart.setIsFirst(true);
 ```
-
-\
-
 
 ### getIsFirst()
 
@@ -512,9 +375,6 @@ const isFirst = chart.getIsFirst();
 console.log(isFirst);
 ```
 
-\
-
-
 ### setPrdCls( prdCls )
 
 차트의 날짜/시간 단위를 설정하는 함수. **prdCls** 값에 따라 **dateformatFunc**을 적용.
@@ -525,9 +385,6 @@ console.log(isFirst);
 chart.setPrdCls(2); // 일 단위 설정
 ```
 
-\
-
-
 ### setMaxMin()
 
 차트의 최대값과 최소값을 계산하여 설정하는 함수.
@@ -535,9 +392,6 @@ chart.setPrdCls(2); // 일 단위 설정
 ```js
 chart.setMaxMin();
 ```
-
-\
-
 
 ### draw()
 
@@ -549,9 +403,6 @@ chart.setMaxMin();
 chart.draw(); // 차트를 새로 그림
 ```
 
-\
-
-
 ### drawBackLine()
 
 차트의 배경선을 그리는 함수.
@@ -559,9 +410,6 @@ chart.draw(); // 차트를 새로 그림
 ```js
 chart.drawBackLine();
 ```
-
-\
-
 
 ### setBackLineColor(color, isRefresh)
 
@@ -574,9 +422,6 @@ chart.setBackLineColor('#f0f0f0', true);
 * **color** `<String>` 백그라운드 컬러
 * **isRefresh** `<Boolean>` 새로고침 여부
 
-\
-
-
 ### setTextColor(color, isRefresh)
 
 텍스트 컬러를 설정.
@@ -587,9 +432,6 @@ chart.setTextColor('#333333', true);
 
 * **color** `<String>` 백그라운드 컬러
 * **isRefresh** `<Boolean>` 새로고침 여부
-
-\
-
 
 ### setUpColor( color, isRefresh )
 
@@ -602,9 +444,6 @@ chart.setUpColor('#00FF00', true);
 * **color** `<String>` 백그라운드 컬러
 * **isRefresh** `<Boolean>` 새로고침 여부
 
-\
-
-
 ### setDownColor( color, isRefresh )
 
 하락 컬러를 설정.
@@ -615,9 +454,6 @@ chart.setDownColor('#FF0000', true);
 
 * **color** `<String>` 백그라운드 컬러
 * **isRefresh** `<Boolean>` 새로고침 여부
-
-\
-
 
 ### isExistNextData()
 
@@ -630,9 +466,6 @@ const hasMoreData = chart.isExistNextData();
 console.log(hasMoreData);
 ```
 
-\
-
-
 ### getOffset()
 
 현재 데이터의 오프셋 값을 가져오는 함수.
@@ -642,9 +475,6 @@ const offset = chart.getOffset();
 console.log(offset);
 ```
 
-\
-
-
 ### barWidthChange()
 
 차트의 봉 너비를 변경하는 함수.
@@ -652,9 +482,6 @@ console.log(offset);
 ```js
 chart.barWidthChange();
 ```
-
-\
-
 
 ### scrollLToR()
 
@@ -680,9 +507,6 @@ chart.scrollRToL(2); // 2칸 왼쪽으로 이동
 chart.updateGraph();
 ```
 
-\
-
-
 ### zoomInOut()
 
 확대 및 축소를 수행. **rateVal**을 기준으로 확대/축소 값을 결정하며, **MAX\_BAR\_W**와 **DEF\_BAR\_W** 사이에서 조정 됨.
@@ -691,9 +515,6 @@ chart.updateGraph();
 chart.zoomInOut(1.5); // 1.5배 확대
 chart.zoomInOut(0.8); // 0.8배 축소
 ```
-
-\
-
 
 ### drawLongTabData(touchX)
 
@@ -705,9 +526,6 @@ chart.zoomInOut(0.8); // 0.8배 축소
 chart.drawLongTabData(150);
 ```
 
-\
-
-
 ### autoScroll(speed)
 
 자동 스크롤을 설정
@@ -718,9 +536,6 @@ chart.drawLongTabData(150);
 chart.autoScroll(5);
 ```
 
-\
-
-
 ### setTouchEvent()
 
 스크롤 또는 롱탭 감지를 위해 이벤트를 등록
@@ -728,9 +543,6 @@ chart.autoScroll(5);
 ```js
 chart.setTouchEvent();
 ```
-
-\
-
 
 ### addNewData(dataArr, keyArr)
 
@@ -746,9 +558,6 @@ chart.addNewData(
 );
 ```
 
-\
-
-
 ### drawLongTabLines()
 
 롱탭한 위치에 십자가 모양의 가이드라인을 표시하는 함수.
@@ -756,9 +565,6 @@ chart.addNewData(
 ```js
 chart.drawLongTabLines();
 ```
-
-\
-
 
 ### setLongtabLineColor(color)
 
@@ -770,9 +576,6 @@ chart.drawLongTabLines();
 chart.setLongtabLineColor('#FF00FF');
 ```
 
-\
-
-
 ### getLongtabLineColor()
 
 롱탭 가이드라인 색상을 반환하는 함수.
@@ -783,9 +586,6 @@ chart.setLongtabLineColor('#FF00FF');
 const color = chart.getLongtabLineColor();
 console.log(color);
 ```
-
-\
-
 
 ### getMappingCount()
 
@@ -799,9 +599,6 @@ console.log(mappingFields);
 
 // 출력 예시: ['Date', 'Start Price', 'High Price', 'Low Price', 'End Price', 'Trade Qty', 'Trade Price']
 ```
-
-\
-
 
 ### getQueryData(t, s)
 

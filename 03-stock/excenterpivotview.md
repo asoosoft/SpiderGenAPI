@@ -1,6 +1,6 @@
 # EXCenterPivotView
 
-> **Extends** [AView](https://wikidocs.net/275135)
+> **Extends** AView
 
 **EXCenterPivotView**는 3개의 그리드(왼쪽, 피벗, 오른쪽)를 포함하고, **각 그리드 간에 스크롤 동기화 및 행 데이터 추가/삭제를 관리하는 뷰 컴포넌트**
 
@@ -57,9 +57,6 @@ console.log(pivotView.rightView);
 ```
 
 ***
-
-\
-
 
 ## Class Methods
 
@@ -269,9 +266,6 @@ this.component.scrollToCenter();
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

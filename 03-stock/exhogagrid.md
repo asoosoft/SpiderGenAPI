@@ -1,15 +1,12 @@
 # EXHogaGrid
 
-> **Extends**: [AGrid](https://wikidocs.net/275178)
+> **Extends**: AGrid
 
 `EXHogaGrid` 는 주식 가격을 관리하고 표시할 수 있는 그리드 시스템을 제공.
 
 이 클래스는 주식 가격 추적, bid/ask 바, 가격 변동에 따른 색상 변경 등의 기능을 제공하며, 실시간으로 주식 가격을 시각화하는 데 유용.
 
 ## Instance Variables
-
-\
-
 
 ### quoteCount `<Number>`
 
@@ -164,9 +161,6 @@
 
 ***
 
-\
-
-
 ## Class Methods
 
 ### setRateSuffixStr(suffix)
@@ -183,9 +177,6 @@ this.hogaGrid.setRateSuffixStr('%');
 ```
 
 ***
-
-\
-
 
 ## Instance Methods
 

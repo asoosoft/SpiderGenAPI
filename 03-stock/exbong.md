@@ -1,6 +1,6 @@
 # EXBong
 
-> **Extends** [AComponent](https://wikidocs.net/274979)
+> **Extends** AComponent
 
 **주식 가격의 변동을 시각적으로 표시**하는 기능을 제공하는 컴포넌트
 
@@ -88,9 +88,6 @@ EXBong 클래스의 프레임워크나 모듈 이름을 나타내는 문자열
 이전 주식 데이터를 나타내는 값
 
 ***
-
-\
-
 
 ## Class Methods
 
@@ -269,9 +266,6 @@ console.log(mapping);  // 출력 예: ["Open", "High", "Low", "Close", "Color"]
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

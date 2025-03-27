@@ -8,9 +8,6 @@
 
 > 지정된 `dir` 값에 따라 **삼각형 방향 및 색상**이 결정 됨.
 
-\
-
-
 ## Properties
 
 ### frwName `<String>`
@@ -18,9 +15,6 @@
 해당 컴포넌트가 속한 프레임워크 네임스페이스를 정의
 
 * **default**: stock
-
-\
-
 
 ### dir `<Number>`
 
@@ -40,9 +34,6 @@
 ```js
 this.triangle.setDirection(2); // 상승 방향 설정
 ```
-
-\
-
 
 ### **arrowEl** `<HTMLDivElement>`
 
@@ -151,9 +142,6 @@ arrowH, headH, bodyH, bodyW 등의 값이 계산되어 **EXTriangle**의 초기 
 this.triangle.initPos();
 ```
 
-\
-
-
 ### setUpDownColor( upColor, downColor )
 
 상승과 하락의 색상을 지정.\
@@ -163,11 +151,8 @@ this.triangle.initPos();
 * **downColor** `<String>` 하락색 "#0000ff"
 
 ```js
-this.triangle.setUpDownColor("#ff0000", "#0000ff");
+this.triangle.setUpDownColor("#ff0000", "#0000ff")
 ```
-
-\
-
 
 ### setDirection( dir )
 
@@ -182,9 +167,6 @@ this.triangle.setUpDownColor("#ff0000", "#0000ff");
 ```js
 this.triangle.setDirection(5); // 하락 방향 설정
 ```
-
-\
-
 
 ### getDirection()
 
@@ -204,12 +186,9 @@ const dir = this.triangle.getDirection();
 console.log(dir); // 현재 방향 출력
 ```
 
-\
-
-
 ### setData( data )
 
-데이터를 \*\*setDirection()\*\*을 통해 설정
+데이터를 setDirection()을 통해 설정
 
 * **data** `<Number>` : **대비 부호 값**
 
@@ -219,14 +198,11 @@ console.log(dir); // 현재 방향 출력
 this.triangle.setData(2); // 상승 방향 설정
 ```
 
-\
-
-
 ### getData()
 
 현재 설정된 대비 부호 방향을 반환
 
-* \*\*getDirection()\*\*을 호출하여 내부 값을 반환.
+* getDirection()을 호출하여 내부 값을 반환.
 * **Returns** `<Number>`
 * **0**: 보합
 * **1**: 상한
@@ -240,14 +216,11 @@ const data = this.triangle.getData();
 console.log(data);
 ```
 
-\
-
-
 ### setQueryData( dataArr, keyArr, queryData )
 
 쿼리 데이터를 기반으로 대비 부호 값을 설정.
 
-**dataArr**의 **keyArr**를 참조하여 적절한 값을 찾고, \*\*setDirection()\*\*을 호출.
+**dataArr**의 **keyArr**를 참조하여 적절한 값을 찾고, setDirection()을 호출.
 
 * **dataArr** `<Array>`: { key1: value, key2: value ... } 형태의 데이터 배열
 * **keyArr** `<Array>`: dataArr에서 사용할 키 배열
@@ -257,7 +230,6 @@ console.log(data);
 this.triangle.setQueryData([{ direction: 2 }], ["direction"], null);
 ```
 
-\
 
 
 ### **updatePosition(t, r)**
@@ -266,17 +238,14 @@ this.triangle.setQueryData([{ direction: 2 }], ["direction"], null);
 isShow()가 **true**이고, dir이 **0**이나 **3**이 아닌 경우, \*\*initPos()\*\*를 다시 호출하여 크기를 조정
 
 ```js
-this.triangle.updatePosition(100, 100);
+this.triangle.updatePosition(100, 100)
 ```
-
-\
-
 
 ### **getMappingCount()**
 
 매핑할 수 있는 데이터 개수를 반환
 
-* \*\*getQueryData()\*\*에서 사용할 key 개수를 나타냄
+* getQueryData()에서 사용할 key 개수를 나타냄
 
 **Returns** `<Number>`
 
