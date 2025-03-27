@@ -1,37 +1,32 @@
-# AContainer( containerId )
+# AContainer
 
-최상위 추상 컨데이너\
-
+최상위 추상 컨데이너
 
 **AContainer 클래스**는 다양한 기능과 이벤트를 통해 UI를 유연하게 구성하고 관리할 수 있도록 도움\
 이를 통해 개발자는 복잡한 사용자 인터페이스를 효율적으로 구현 가능
 
-비유하자면 [**AView**](https://wikidocs.net/275135) 는 그림이고 **AContainer** 는 그림을 감싸고 있는 액자라고 할 수 있음
+비유하자면 **AView** 는 그림이고 **AContainer** 는 그림을 감싸고 있는 액자라고 할 수 있음
 
 *   **containerId** `<String>`\
-    컨테이너를 구분 짓는 고유 아이디\
-
+    컨테이너를 구분 짓는 고유 아이디
 
     컨테이너 아이디는 중복될 수 없으며 열려 있는 컨테이너를 찾거나 구별하는 경우에 사용
 
-\
 
 
 ## Class Variables
 
 ### openContainers `<Object>`
 
-현재 응용프로그램에서 열려 있는 모든 컨테이너를 저장하는 객체\
+현재 응용프로그램에서 열려 있는 모든 컨테이너를 저장하는 객체
 
-
-이 변수는 [findOpenContainer 함수](acontainer.md#acontainer.findopencontainer-cntrid-)를 통해 특정 컨테이너를 찾는 데 사용
+이 변수는 findOpenContainer 함수를 통해 특정 컨테이너를 찾는 데 사용
 
 ***
 
 ### disableIosScroll `<Boolean>`
 
-iOS 웹 환경에서 터치 드래그 바운스 효과를 방지하기 위한 설정 변수\
-
+iOS 웹 환경에서 터치 드래그 바운스 효과를 방지하기 위한 설정 변수
 
 기본값은 false이며, true로 설정하면 iOS에서 스크롤이 비활성화
 
@@ -104,8 +99,7 @@ setOption()을 통해 값을 설정하고, noOverwrite 옵션을 사용하여 �
 
 #### 👉 option 속성 설명
 
-*   **isAsync** `<Boolean>` : 기본값 true\
-
+*   **isAsync** `<Boolean>` : 기본값 true\\
 
     이 옵션은 **컨테이너의 뷰 로딩 방식**이 비동기식인지 동기식인지를 설정
 
@@ -118,8 +112,7 @@ container.setOption({ isAsync: false });
 
 ***
 
-*   **inParent** `<Boolean>` : 기본값 true (부모 컨테이너에 자동 추가)\
-
+*   **inParent** `<Boolean>` : 기본값 true (부모 컨테이너에 자동 추가)\\
 
     이 옵션은 **컨테이너가 부모 컨테이너에 추가**될 때, 기본적으로 해당 컨테이너가 부모의 **element**에 포함될지 여부를 결정
 
@@ -132,8 +125,7 @@ container.setOption({ inParent: false });
 
 ***
 
-*   **isTitleBar** `<Boolean>` : 기본값 false (타이틀 바 미사용)\
-
+*   **isTitleBar** `<Boolean>` : 기본값 false (타이틀 바 미사용)
 
     이 옵션은 **타이틀 바**를 사용할지 여부를 설정
 
@@ -146,8 +138,7 @@ container.setOption({ isTitleBar: true });
 
 ***
 
-*   **focusOnInit** `<Boolean>` : 기본값 true (초기화 시 포커스 설정)\
-
+*   **focusOnInit** `<Boolean>` : 기본값 true (초기화 시 포커스 설정)
 
     이 옵션은 **컨테이너가 초기화될 때 자동으로 포커스를 설정**할지 여부를 결정
 
@@ -160,8 +151,7 @@ container.setOption({ focusOnInit: false });
 
 ***
 
-*   **noAutoScale** `<Boolean>` : 기본값 false (자동 크기 조정 활성화)\
-
+*   **noAutoScale** `<Boolean>` : 기본값 false (자동 크기 조정 활성화)\\
 
     이 옵션은 **컨테이너의 자동 크기 조정 기능**을 비활성화할지 여부를 결정
 
@@ -174,7 +164,6 @@ container.setOption({ noAutoScale: true });
 
 ***
 
-\
 
 
 ## Instance Variables
@@ -224,8 +213,7 @@ this.$ele.css('color', 'blue');
 ### parent `<AContainer>`
 
 자신을 오픈한 부모 컨테이너 객체\
-AContainer 의 open 함수 호출 시 지정 가능\
-
+AContainer 의 open 함수 호출 시 지정 가능
 
 컨테이너의 계층 구조를 관리하는 데 사용
 
@@ -239,15 +227,13 @@ AView는 화면을 구성하는 컴포넌트를 담고 있으며,\
 
 ***
 
-\
 
 
 ## Class Methods
 
 ### findOpenContainer( cntrId )
 
-주어진 컨테이너 아이디로 현재 열려 있는 컨테이너 객체를 반환\
-
+주어진 컨테이너 아이디로 현재 열려 있는 컨테이너 객체를 반환
 
 이 메서드는 특정 컨테이너를 찾거나 구별하는 데 유용
 
@@ -265,8 +251,7 @@ cntr.show();
 
 ### getDefaultParent( self )
 
-주어진 컨테이너(self)에 대한 기본 부모 컨테이너를 반환\
-
+주어진 컨테이너(self)에 대한 기본 부모 컨테이너를 반환
 
 open() 함수에서 parent가 지정되지 않았을 경우 자동으로 적절한 부모 컨테이너를 찾아 설정하는 역할
 
@@ -282,22 +267,20 @@ console.log(defaultParent);
 
 ***
 
-\
 
 
 ## Instance Methods
 
 ### appendSplit( splitSize, panelClass )
 
-컨테이너에 새로운 분할 영역을 맨 뒤에 추가\
-
+컨테이너에 새로운 분할 영역을 맨 뒤에 추가
 
 분할 영역의 크기와 클래스 이름을 지정 가능
 
-AContainer 분할에 대한 자세한 설명은 [createSplit](acontainer.md#createsplit-count-sizearr-splitdir-barsize-panelclass-) 함수 참조
+AContainer 분할에 대한 자세한 설명은 createSplit 함수 참조
 
 * **splitSize**: `<Number>` 분할할 사이즈를 지정\
-  \- 생략하거나 -1 지정시 자동으로 계산하여 영역 할당\
+  \- 생략하거나 -1 지정 시 자동으로 계산하여 영역 할당\
   \- 소수점 입력 시 비율만큼 할당
 *   **panelClass**: `<String>` 추가할 APanel 클래스 이름
 
@@ -352,18 +335,15 @@ function MyTestView*onCloseBtnClick(acomp, info, evt)
 ### createSplit( count, sizeArr, splitDir, barSize, panelClass )
 
 컨테이너를 지정한 개수만큼 분할하고,\
-각 영역에 새로운 컨테이너를 생성\
-
+각 영역에 새로운 컨테이너를 생성
 
 분할 방향과 크기를 설정 가능
 
-생성된 컨테이너들 끼리의 영역은 스플릿바를 통해 리사이즈 가능\
+생성된 컨테이너들 끼리의 영역은 스플릿바를 통해 리사이즈 가능
 
-
-> 컨테이너 open 함수 호출 시 url 을 지정하지 않으면 빈 컨테이너가 생성\
+> 컨테이너 open 함수 호출 시 url 을 지정하지 않으면 빈 컨테이너가 생성
 >
->
-> 차후 [setView](acontainer.md#setview-url-isfull-asynccallback-) 함수로 AView를 로드할 수 있음
+> 차후 setView 함수로 AView를 로드할 수 있음
 
 * **count**: `<Number>` 분할할 컨테이너 갯수
 * **sizeArr**: `<Array>` 분할할 각 컨테이너의 사이즈 배열
@@ -421,8 +401,7 @@ function TestWindow*onCreate()
 
 ### destroySplit()
 
-분할된 모든 컨테이너를 삭제하고, 초기 상태로 되돌림\
-
+분할된 모든 컨테이너를 삭제하고, 초기 상태로 되돌림
 
 > createSplit 이전 상태로 돌린다.
 
@@ -430,8 +409,7 @@ function TestWindow*onCreate()
 
 ### enable( isEnable )
 
-컨테이너와 내부의 모든 컴포넌트를 활성화 또는 비활성화\
-
+컨테이너와 내부의 모든 컴포넌트를 활성화 또는 비활성화
 
 * **isEnable**: `<Boolean>` 활성화 여부
 
@@ -467,8 +445,7 @@ console.log(cntr2.getClassName());  //"APanel"
 
 ### getContainerId()
 
-컨테이너의 고유 아이디를 반환\
-
+컨테이너의 고유 아이디를 반환
 
 > 컨테이너 아이디는 중복될 수 없으며 열려 있는 컨테이너를 찾거나 구별하는 경우에 사용
 
@@ -480,7 +457,7 @@ console.log(cntr2.getClassName());  //"APanel"
 
 컨테이너에 설정된 데이터를 반환
 
-> [setData](acontainer.md#setdata-data-) 를 통해 셋팅한 데이터 값을 리턴
+> setData 를 통해 셋팅한 데이터 값을 리턴
 
 * **Returns** `<All>`
 
@@ -498,7 +475,7 @@ console.log(cntr2.getClassName());  //"APanel"
 
 컨테이너의 부모 객체를 반환
 
-> AContainer 의 [open](acontainer.md#open-url-parent-left-top-width-height-) 함수 호출 시 지정한 부모 컨테이너 객체를 리턴
+> AContainer 의 open 함수 호출 시 지정한 부모 컨테이너 객체를 리턴
 
 * **Returns** `<AContatiner>`
 
@@ -532,10 +509,9 @@ console.log(pos.left + ', ' + pos.top);
 
 ### getSplitPanel( inx )
 
-특정 인덱스의 분할 영역에 해당하는 패널을 반환\
+특정 인덱스의 분할 영역에 해당하는 패널을 반환
 
-
-> 분할에 대한 자세한 설명은 [createSplit](acontainer.md#createsplit-count-sizearr-splitdir-barsize-panelclass-) 함수 참조
+> 분할에 대한 자세한 설명은 createSplit 함수 참조
 
 * **inx**: `<Number>` 분할된 영역의 index
 * **Returns** `<APanel>`
@@ -548,8 +524,7 @@ let panel = cntr.getSplitPanel(2);  //3번째 분할된 영역의 패널 리턴
 
 ### getView()
 
-컨테이너가 감싸고 있는 AView 객체를 반환\
-
+컨테이너가 감싸고 있는 AView 객체를 반환
 
 * **Returns** `<AView>`
 
@@ -608,10 +583,9 @@ function TestView*onInitDone()
 
 ### insertSplit( inx, splitSize, isAfter, panelClass )
 
-특정 인덱스 위치에 새로운 분할 영역을 삽입\
+특정 인덱스 위치에 새로운 분할 영역을 삽입
 
-
-> AContainer 분할에 대한 자세한 설명은 [createSplit](acontainer.md#createsplit-count-sizearr-splitdir-barsize-panelclass-) 함수 참조
+> AContainer 분할에 대한 자세한 설명은 createSplit 함수 참조
 
 * **inx**: `<Number>` 분할해서 추가할 컨테이너 위치
 * **splitSize**: `<Number>` 분할할 사이즈를 지정
@@ -640,8 +614,7 @@ function MainView*onSplitBtnClick(acomp, info, evt)
 
 ### isOpen()
 
-컨테이너가 열려 있는지를 반환\
-
+컨테이너가 열려 있는지를 반환
 
 > open 함수가 호출되었는지 여부
 
@@ -659,8 +632,7 @@ function MainView*onSplitBtnClick(acomp, info, evt)
 
 ### isValid()
 
-컨테이너의 유효성을 반환\
-
+컨테이너의 유효성을 반환
 
 > 아직 open 이 호출되지 않았거나 open 후에 close 가 호출 되었으면 isValid 는 false(유효하지 않은 상황)
 
@@ -670,8 +642,7 @@ function MainView*onSplitBtnClick(acomp, info, evt)
 
 ### open( url, parent, left, top, width, height )
 
-컨테이너를 열고, 지정된 URL의 뷰를 로드\
-
+컨테이너를 열고, 지정된 URL의 뷰를 로드
 
 > url 정보가 셋팅되어져 있으면 view 객체를 생성하고 자신의 공간으로 로드
 
@@ -709,10 +680,9 @@ APage.prototype.open = function(viewUrl, parent)
 
 ### prependSplit( splitSize, panelClass )
 
-새로운 분할 영역을 맨 앞에 추가\
+새로운 분할 영역을 맨 앞에 추가\\
 
-
-> AContainer 분할에 대한 자세한 설명은 [createSplit](acontainer.md#createsplit-count-sizearr-splitdir-barsize-panelclass-) 함수 참조
+> AContainer 분할에 대한 자세한 설명은 createSplit 함수 참조
 
 * **splitSize**: `<Number>` 분할할 사이즈를 지정
   * 생략하거나 -1 지정시 자동으로 계산하여 영역 할당
@@ -747,8 +717,7 @@ function MainView*onSplitBtnClick(acomp, info, evt)
 
 ### setActiveRecursive( isRecursive )
 
-컨테이너의 활성화/비활성화 이벤트를 자식 뷰들에게도 재귀적으로 전달할지 여부를 설정\
-
+컨테이너의 활성화/비활성화 이벤트를 자식 뷰들에게도 재귀적으로 전달할지 여부를 설정
 
 > 이 값은 컨테이너 단위로 작동
 
@@ -766,8 +735,7 @@ wnd.open(...);
 
 ### setContainerId( containerId )
 
-컨테이너의 고유 아이디를 설정\
-
+컨테이너의 고유 아이디를 설정
 
 > 컨테이너 아이디는 중복될 수 없으며 열려 있는 컨테이너를 찾거나 구별하는 경우에 사용
 
@@ -777,8 +745,7 @@ wnd.open(...);
 
 ### setData( data )
 
-컨테이너에 데이터를 설정\
-
+컨테이너에 데이터를 설정
 
 > 이 값은 향후 컨테이너가 오픈된 후 참조하기 위해 주로 사용
 
@@ -808,8 +775,7 @@ function TestView*onInitDone()
 
 컨테이너의 높이를 설정
 
-*   **height**: `<String | Number>` 높이 값\
-
+*   **height**: `<String | Number>` 높이 값
 
     > ex ) 100, '100px', '100%\`
 
@@ -817,15 +783,13 @@ function TestView*onInitDone()
 
 ### setParent( newParent, styleObj )
 
-컨테이너의 부모를 새롭게 설정\
-
+컨테이너의 부모를 새롭게 설정
 
 > 컨테이너의 inParent 옵션이 true 로 셋팅되어져 있으면 부모가 바뀔 때,\
 > 자신이 포함되어 있던 영역도 새로운 부모의 하위 공간으로 바꿈
 
 * **newParent**: `<AContainer>` 새로 설정 할 부모 컨테이너
-*   **styleObj**: `<Object>` 부모가 바뀌면서 설정할 스타일\
-
+*   **styleObj**: `<Object>` 부모가 바뀌면서 설정할 스타일
 
     > ex ) { left:'0px', top:'0px' }
 * **Returns** `<AContainer>` 기존에 셋팅되어 있던 parent
@@ -851,22 +815,18 @@ let oldParent = cntr.setParent(theApp.getMainContainer(), {left:'0px', top:'0px'
 
 ### setView( url, isFull, asyncCallback )
 
-컨테이너 내부에 뷰를 설정\
+컨테이너 내부에 뷰를 설정
 
-
-> 일반적으로 open 함수 호출 시, url 값을 넣어주면 open 함수 내부에서 이 함수를 호출\
->
+> 일반적으로 open 함수 호출 시, url 값을 넣어주면 open 함수 내부에서 이 함수를 호출\\
 >
 > open 에 url 을 넣지 않은 경우 차후 별도로 setView 를 호출
 
-\
 
 
 * **url**: `<String | AView>` AView 객체를 로드할 lay 파일의 경로 **또는** 컨테이너 내부에 셋팅할 AView 객체
 * **isFull**: `<Boolean>` 뷰가 생성되면서 컨테이너 내부를 가득 채울지 여부
 *   **asyncCallback**: `<Boolean | Function>` lay 파일을 비동기로 로드할 지 여부\
-    파라미터 타입이 Function이면 로드완료 후 콜백 함수를 호출\
-
+    파라미터 타입이 Function이면 로드완료 후 콜백 함수를 호출
 
     > url 파라미터가 파일의 경로일 경우만 유효
 
@@ -916,8 +876,7 @@ cntr.deleteView(); // 기존 뷰 제거
 
 컨테이너의 넓이를 설정
 
-*   **width**: `<String | Number>` 높이 값\
-
+*   **width**: `<String | Number>` 높이 값
 
     > ex ) 100, '100px', '100%'
 
@@ -937,8 +896,7 @@ cntr.setStyle('background-color', 'red', 'important');
 
 ### show()
 
-숨겨진 컨테이너를 표시\
-
+숨겨진 컨테이너를 표시
 
 > AWindow 계열의 컨테이너인 경우는 앞으로 활성화
 
@@ -954,8 +912,7 @@ cntr.setStyle('background-color', 'red', 'important');
 
 ### setOption(option, noOverwrite)
 
-컨테이너의 옵션을 설정\
-
+컨테이너의 옵션을 설정
 
 **this.option** 에 값을 셋팅해 주는 역할을 하며,\
 option 의 세부 내용은 각 컨테이너 마다 다름
@@ -1041,8 +998,7 @@ container.setOption({
 
 분할 영역의 크기가 변경될 때 호출
 
-*   **splitItem**: `<HTMLElement>` 컨테이너를 감싸고 있는 아이템\
-
+*   **splitItem**: `<HTMLElement>` 컨테이너를 감싸고 있는 아이템\\
 
     > ex) { acont: null, ... }
 
