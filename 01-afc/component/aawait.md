@@ -28,9 +28,6 @@ Promise 기반의 대기 기능을 제공하며, 여러 개의 비동기 작업�
 
 ***
 
-\
-
-
 ## Instance Methods
 
 ### **addProm(prom)**

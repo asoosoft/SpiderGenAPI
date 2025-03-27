@@ -63,9 +63,6 @@ const canvas = new ACanvas();
 canvas.updatePosition(300, 300);
 ```
 
-\
-
-
 ### resetContextState()
 
 캔버스 크기가 변경될 때 context의 상태를 초기화
