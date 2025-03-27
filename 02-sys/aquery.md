@@ -1,7 +1,7 @@
 # AQuery
 
 Query 파일의 구조 정보를 관리하는 클래스\
-쿼리시스템을 이용한 통신에 대한 설명은 [IO System](https://wikidocs.net/24908) 참고
+쿼리시스템을 이용한 통신에 대한 설명은 [IO System](https://app.gitbook.com/s/a1djbpbzXMGAimyJz5v8/05-advanced/02-i-o-system) 참고
 
 ## Static Variables
 
@@ -434,7 +434,7 @@ AQuery.prototype.parse_xml = function(strQuery) {
 ### setBarPos( pos )
 
 스크롤 위치를 절대값으로 설정.\
-&#xNAN;**(주의)**: AQuery 자체와 직접적인 연관은 없음.
+\&#xNAN;**(주의)**: AQuery 자체와 직접적인 연관은 없음.
 
 * **pos** `<Number>` : 스크롤 위치
 

@@ -18,17 +18,11 @@ let radioBtnManager = new RadioBtnManager(view, true);
 
 ***
 
-\
-
-
 ## Properties
 
 * **view** `<Object>` : view 컴포넌트 객체로, 버튼을 찾고 관리할 뷰 객체
 * **isCheckStyle** `<Boolean>` : 체크 스타일인지 여부를 설정
   * true이면 체크 스타일, false이면 일반 스타일로 동작
-
-\
-
 
 ## Class Variables
 
@@ -76,9 +70,6 @@ console.log(radioBtnManager.isCheckStyle);  // true
 ```
 
 ***
-
-\
-
 
 ## Instance Methods
 
@@ -139,9 +130,6 @@ radioBtnManager.reset();
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

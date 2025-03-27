@@ -4,9 +4,6 @@ AComponent의 드래그 & 드랍 기능을 관리하는 클래스
 
 > 이 클래스를 사용하면 특정 UI 요소를 드래그 가능하도록 설정하고, 드랍 이벤트를 처리 가능.
 
-\
-
-
 ## Static Variables
 
 ### DDManager.DIR\_BOTH `<Number>`
@@ -16,9 +13,6 @@ AComponent의 드래그 & 드랍 기능을 관리하는 클래스
 **setDDOption** 에 direction 으로 지정.
 
 * **Default** 0
-
-\
-
 
 ### DDManager.DIR\_VERTICAL `<Number>`
 
@@ -82,17 +76,13 @@ direction: DDManager.DIR_BOTH
 // 드래그 이동 가능 방향, 기본은 가로, 세로 모두 가능
 ```
 
-\
-
-
 ## Instance Methods
 
 ### enableDrag( isDraggable, listener )
 
 드래그 가능 여부를 지정.
 
-> 리스너에 드래그가 시작, 종료될 때 호출되는 이벤트 함수를 반드시 정의해야 한다.\
->
+> 리스너에 드래그가 시작, 종료될 때 호출되는 이벤트 함수를 반드시 정의해야 한다.\\
 
 드래그 시작 이벤트 : `onDragStart(dragComp, e)`\
 드래그 종료 이벤트 : `onDragEnd(dragComp, e)`
@@ -105,9 +95,6 @@ direction: DDManager.DIR_BOTH
 ddMgr.enableDrag(true, this);
 ddMgr.enableDrag(false, this);
 ```
-
-\
-
 
 ### enableDrop( isDroppable, listener )
 
@@ -126,9 +113,6 @@ ddMgr.enableDrag(false, this);
 ddMgr.enableDrop(true, this);
 ddMgr.enableDrop(false, this);
 ```
-
-\
-
 
 ### setDDOption( option )
 
@@ -150,9 +134,6 @@ const option = {
 ddMgr.setDDOption(option);
 ```
 
-\
-
-
 ### setDragBound( bound )
 
 드래그 가능 영역을 설정.
@@ -165,9 +146,6 @@ ddMgr.setDDOption(option);
 // ddMgr 은 DDManager 객체
 ddMgr.setDragBound(this.dragComp.getBoundRect());
 ```
-
-\
-
 
 ### setDropListener( listener )
 
@@ -183,9 +161,6 @@ ddMgr.setDragBound(this.dragComp.getBoundRect());
 // ddMgr 은 DDManager 객체
 ddMgr.setDropListener(this);
 ```
-
-\
-
 
 ### setOffset( offsetX, offsetY )
 

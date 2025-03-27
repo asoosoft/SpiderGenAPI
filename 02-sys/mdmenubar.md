@@ -6,9 +6,6 @@
 
 > 메뉴 버튼을 추가, 복제, 제거할 수 있으며, 메뉴 선택 시 이벤트를 발생
 
-\
-
-
 ## Properties
 
 ### activeMenu `<AMenu>`
@@ -29,8 +26,6 @@
 
 * **Default**: `false`
 
-\
-\
 
 
 ## Instance Methods
@@ -61,9 +56,6 @@ const menuInfo =
 
 mdMenuBar.initWithMenuInfo(menuInfo);
 ```
-
-\
-
 
 ### addMenuButton( text, menuItem, iconMap)
 
@@ -99,9 +91,6 @@ const menuItem = [
 
 mdMenuBar.addMenuButton('btn1', menuItem, 'common_icon_map');
 ```
-
-\
-
 
 ### makeCloneMenuBar()
 

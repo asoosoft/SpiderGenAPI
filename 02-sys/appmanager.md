@@ -37,9 +37,6 @@
 
 ***
 
-\
-
-
 ## Instance Methods
 
 ### 웹뷰 ( WebView ) 관리
@@ -55,9 +52,6 @@
 AppManager.loadWebView($('#webContainer'), 'https://example.com');
 ```
 
-\
-
-
 ### destroyWebView(ele)
 
 웹뷰(WebView)를 제거
@@ -67,9 +61,6 @@ AppManager.loadWebView($('#webContainer'), 'https://example.com');
 ```js
 AppManager.destroyWebView($('#webContainer'));
 ```
-
-\
-
 
 ### bringToFront(isFront)
 
@@ -81,9 +72,6 @@ AppManager.destroyWebView($('#webContainer'));
 ```js
 AppManager.bringToFront(true);
 ```
-
-\
-
 
 ### goUrl(url, isClose)
 
@@ -97,9 +85,6 @@ AppManager.bringToFront(true);
 AppManager.goUrl("https://example.com", true);
 ```
 
-\
-
-
 ### goUrlWebView(url)
 
 웹뷰에서 URL을 엶
@@ -109,9 +94,6 @@ AppManager.goUrl("https://example.com", true);
 ```js
 AppManager.goUrlWebView("https://example.com");
 ```
-
-\
-
 
 ### openPdf(url)
 
@@ -123,9 +105,6 @@ PDF 파일을 엶
 AppManager.openPdf("https://example.com/sample.pdf");
 ```
 
-\
-
-
 ### openChrome(url)
 
 Chrome 브라우저에서 URL을 엶
@@ -135,9 +114,6 @@ Chrome 브라우저에서 URL을 엶
 ```js
 AppManager.openChrome("https://example.com");
 ```
-
-\
-
 
 ### openChromeCustom(url)
 
@@ -164,9 +140,6 @@ AppManager.openChromeCustom("https://example.com");
 AppManager.setOrientation(AppManager.SCREEN_ORIENTATION_PORTRAIT);
 ```
 
-\
-
-
 ### setPortrait(isPortrait)
 
 세로 또는 가로 모드를 설정
@@ -177,9 +150,6 @@ AppManager.setOrientation(AppManager.SCREEN_ORIENTATION_PORTRAIT);
 ```js
 AppManager.setPortrait(true);
 ```
-
-\
-
 
 ### getSystemInfo(callback)
 
@@ -193,9 +163,6 @@ AppManager.getSystemInfo(function(info) {
 });
 ```
 
-\
-
-
 ### getModelName(callback)
 
 기기 모델명을 가져옴
@@ -207,9 +174,6 @@ AppManager.getModelName(function(model) {
     console.log("Device Model:", model);
 });
 ```
-
-\
-
 
 ### getAppName(callback)
 
@@ -223,9 +187,6 @@ AppManager.getAppName(function(name) {
 });
 ```
 
-\
-
-
 ### getVersion(callback)
 
 앱 버전을 가져옴
@@ -237,9 +198,6 @@ AppManager.getVersion(function(version) {
     console.log("App Version:", version);
 });
 ```
-
-\
-
 
 ### getAppId(callback)
 
@@ -253,9 +211,6 @@ AppManager.getAppId(function(appId) {
 });
 ```
 
-\
-
-
 ### getUuid(callback)
 
 기기의 고유 UUID를 가져옴
@@ -267,11 +222,8 @@ AppManager.getAppId(function(appId) {
 ```js
 AppManager.getUuid(function(uuid) {
     console.log("Device UUID:", uuid);
-});
+})
 ```
-
-\
-
 
 ### enableApp(isEnable)
 
@@ -285,9 +237,6 @@ AppManager.enableApp(false); // 비활성화
 AppManager.enableApp(true); // 활성화
 ```
 
-\
-
-
 ### exitApp()
 
 앱을 종료
@@ -295,9 +244,6 @@ AppManager.enableApp(true); // 활성화
 ```js
 AppManager.exitApp();
 ```
-
-\
-
 
 ### touchDelay()
 
@@ -307,9 +253,6 @@ AppManager.exitApp();
 AppManager.touchDelay();
 ```
 
-\
-
-
 ### applyPref()
 
 앱의 환경 설정을 적용
@@ -317,9 +260,6 @@ AppManager.touchDelay();
 ```js
 AppManager.applyPref();
 ```
-
-\
-
 
 ### hidePatchView()
 
@@ -343,9 +283,6 @@ AppManager.hidePatchView();
 AppManager.deleteFile('/storage/emulated/0/Download/sample.txt');
 ```
 
-\
-
-
 ### downloadFile(url)
 
 파일을 다운로드
@@ -355,9 +292,6 @@ AppManager.deleteFile('/storage/emulated/0/Download/sample.txt');
 ```js
 AppManager.downloadFile('https://example.com/sample.pdf');
 ```
-
-\
-
 
 ### getImageBase64(url, callback)
 
@@ -372,9 +306,6 @@ AppManager.getImageBase64('https://example.com/image.jpg', function(data) {
 });
 ```
 
-\
-
-
 ### setPref(key, val)
 
 환경 설정에 값을 저장
@@ -385,9 +316,6 @@ AppManager.getImageBase64('https://example.com/image.jpg', function(data) {
 ```js
 AppManager.setPref("userName", "홍길동");
 ```
-
-\
-
 
 ### getPref(key, callback)
 
@@ -401,9 +329,6 @@ AppManager.getPref("userName", function(value) {
 	console.log("저장된 사용자 이름:", value); 
 });
 ```
-
-\
-
 
 ### clearPref(key)
 
@@ -429,9 +354,6 @@ AppManager.clearPref("userName");
 AppManager.showNotification("업데이트가 완료되었습니다.");
 ```
 
-\
-
-
 ### appAlert(alertInfo, callback)
 
 앱 내 알림창을 표시
@@ -445,9 +367,6 @@ AppManager.appAlert(["알림", "업데이트가 필요합니다.", "확인"], fu
 });
 ```
 
-\
-
-
 ### closeAppAlert(msg)
 
 앱 내 알림창을 닫음
@@ -458,9 +377,6 @@ AppManager.appAlert(["알림", "업데이트가 필요합니다.", "확인"], fu
 AppManager.closeAppAlert("앱 닫겠습니다.");
 ```
 
-\
-
-
 ### vibrator()
 
 기기에서 진동을 발생
@@ -468,9 +384,6 @@ AppManager.closeAppAlert("앱 닫겠습니다.");
 ```js
 AppManager.vibrator();
 ```
-
-\
-
 
 ### beep(volumn)
 
@@ -498,9 +411,6 @@ AppManager.getIpAddress(function(publicIp, privateIp) {
 });
 ```
 
-\
-
-
 ### getPhoneInfo(callback)
 
 휴대전화 정보를 가져옴
@@ -512,9 +422,6 @@ AppManager.getPhoneInfo(function(info) {
     console.log("Phone Info:", info);
 });
 ```
-
-\
-
 
 ### getResponseText(url, callback)
 
@@ -545,9 +452,6 @@ AppManager.getResponseText("https://example.com/api/data", function(responseText
 AppManager.showProgress(30);
 ```
 
-\
-
-
 ### hideProgress()
 
 프로그레스를 숨김
@@ -555,9 +459,6 @@ AppManager.showProgress(30);
 ```js
 AppManager.hideProgress();
 ```
-
-\
-
 
 ### beginOltp(sec)
 
@@ -568,9 +469,6 @@ OLTP(Online Transaction Processing) 프로세스를 시작
 ```js
 AppManager.beginOltp(60);
 ```
-
-\
-
 
 ### endOltp()
 
@@ -595,9 +493,6 @@ AppManager.endOltp();
 AppManager.callApp("myapp://", "https://play.google.com/store/apps/details?id=com.example");
 ```
 
-\
-
-
 ### goDeepLink(schemaUrl, marketUrl)
 
 딥 링크를 사용해 앱을 호출하거나, 앱이 없으면 마켓 링크로 이동
@@ -608,9 +503,6 @@ AppManager.callApp("myapp://", "https://play.google.com/store/apps/details?id=co
 ```js
 AppManager.goDeepLink("myapp://home", "https://play.google.com/store/apps/details?id=com.example");
 ```
-
-\
-
 
 ### callApplication()
 
@@ -633,9 +525,6 @@ AppManager.callApplication();
 ```js
 AppManager.addLog("앱 시작됨");
 ```
-
-\
-
 
 ### consoleLog(msg)
 
@@ -664,9 +553,6 @@ AppManager.consoleLog('이것은 로그 메시지입니다.');
 AppManager.sendSMS("010-1234-5678", "안녕하세요!");
 ```
 
-\
-
-
 ### phoneCall(phoneNumber, doCall)
 
 전화 걸기 기능
@@ -676,11 +562,8 @@ AppManager.sendSMS("010-1234-5678", "안녕하세요!");
   true이면 전화 걸기, false이면 링크로 이동
 
 ```js
-AppManager.phoneCall("010-1234-5678", true);
+AppManager.phoneCall("010-1234-5678", true
 ```
-
-\
-
 
 ### sendEmail(mailAddr, mailTitle, mailContent)
 
@@ -711,9 +594,6 @@ AppManager.wowEncode("sample text", function(encoded) {
 });
 ```
 
-\
-
-
 ### wowExEncode(str, callback)
 
 확장 인코딩을 수행
@@ -727,9 +607,6 @@ AppManager.wowExEncode("sample text", function(encoded) {
 });
 ```
 
-\
-
-
 ### wowDecode(str, callback)
 
 문자열을 디코딩
@@ -742,9 +619,6 @@ AppManager.wowDecode("encoded text", function(decoded) {
     console.log("Decoded Text:", decoded);
 });
 ```
-
-\
-
 
 ### wowExDecode(str, callback)
 
@@ -773,11 +647,8 @@ AppManager.wowExDecode("encoded text", function(decoded) {
 ```js
 AppManager.screenShoot(function(result) {
     console.log("스크린 샷 캡처:", result);
-}, 'screenshot.png');
+}, 'screenshot.png')
 ```
-
-\
-
 
 ### screenshoot(callback)
 
@@ -793,9 +664,6 @@ AppManager.screenshoot(function(result) {
 });
 ```
 
-\
-
-
 ### playAudio(url)
 
 지정된 URL에서 오디오 파일을 재생
@@ -805,9 +673,6 @@ AppManager.screenshoot(function(result) {
 ```js
 AppManager.playAudio('https://example.com/audio.mp3');
 ```
-
-\
-
 
 ## Example Usage
 

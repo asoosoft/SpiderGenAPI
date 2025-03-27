@@ -1,53 +1,49 @@
 # ADataBinder
 
-**ADataBinder**는 **데이터와 UI 컴포넌트 간의 동기화**를 관리하는 클래스\
+**ADataBinder**는 **데이터와 UI 컴포넌트 간의 동기화**를 관리하는 클래스\\
 
-
-이 클래스는 **데이터 변경 이벤트를 리스너에게 전달**하여 UI가 자동으로 갱신되도록함\
-
+이 클래스는 **데이터 변경 이벤트를 리스너에게 전달**하여 UI가 자동으로 갱신되도록함\\
 
 이를 통해 **데이터 변경을 보다 직관적이고 효율적으로 관리**할 수 있음
 
-\
 
 
 ## Class Variables
 
-### **ITEM\_SELECT** `<Number>` 
+### **ITEM\_SELECT** `<Number>`
 
 선택된 항목을 나타내는 상수 값 (1)
 
 ***
 
-### **ITEM\_INSERT** `<Number>` 
+### **ITEM\_INSERT** `<Number>`
 
 항목 삽입을 나타내는 상수 값 (2)
 
 ***
 
-### **ITEM\_DELETE** `<Number>` 
+### **ITEM\_DELETE** `<Number>`
 
 항목 삭제를 나타내는 상수 값 (3)
 
 ***
 
-### **ITEM\_EDIT** `<Number>` 
+### **ITEM\_EDIT** `<Number>`
 
 항목 편집을 나타내는 상수 값 (4)
 
 ***
 
-### **ITEM\_REFRESH** `<Number>` 
+### **ITEM\_REFRESH** `<Number>`
 
 항목 새로 고침을 나타내는 상수 값 (5)
 
 ***
 
-### **CUSTOM\_ACTION** `<Number>` 
+### **CUSTOM\_ACTION** `<Number>`
 
 사용자 정의 작업을 나타내는 상수 값 (6)
 
-\
 
 
 이 상수들은 **reportChange()** 메서드에서 사용되어 데이터 변경 이벤트의 유형을 구분하는 데 사용
@@ -61,9 +57,6 @@ ex ) ADataBinder.ITEM\_EDIT와 같은 상수값을 사용하여 데이터 변경
 데이터 변경 이벤트를 리스너에게 전달하기 위해 **reportChange()** 메서드를 **수동으로 호출해야함**
 
 ***
-
-\
-
 
 ## Instance Variables
 
@@ -85,11 +78,6 @@ ex ) ADataBinder.ITEM\_EDIT와 같은 상수값을 사용하여 데이터 변경
 ```js
 binder.dataListeners.push(myListener);
 ```
-
-***
-
-\
-
 
 ## Instance Methods
 

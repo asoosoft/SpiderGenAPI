@@ -19,9 +19,6 @@ let queryData = new AQueryData(myQuery);
 
 ***
 
-\
-
-
 ## Class Variables
 
 ### **aquery** `<AQuery>`
@@ -126,9 +123,6 @@ queryData.dblTostr = true;
 ```
 
 ***
-
-\
-
 
 ## Instance Methods
 
@@ -432,9 +426,6 @@ queryData.setFieldAttr(myBuffer, myData, myBlockData, myFormat);
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

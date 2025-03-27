@@ -19,12 +19,9 @@ const socket = new SocketIO(listener);
 
 ***
 
-\
-
-
 ## Instance Variables
 
-### **workerId** `<Number>` 
+### **workerId** `<Number>`
 
 소켓 통신을 위한 고유 식별자
 
@@ -32,26 +29,23 @@ const socket = new SocketIO(listener);
 
 ***
 
-### **selfClose** `<Boolean>` 
+### **selfClose** `<Boolean>`
 
 소켓 연결이 종료되었을 때, 연결 종료가 내부에서 일어난 것인지 여부를 나타냄
 
 ***
 
-### **address** `<String>` 
+### **address** `<String>`
 
 소켓 연결 시 사용할 서버 주소
 
 ***
 
-### **port** `<Number>` 
+### **port** `<Number>`
 
 소켓 연결 시 사용할 서버 포트
 
 ***
-
-\
-
 
 ## Instance Methods
 
@@ -109,9 +103,6 @@ socket.sendData("Hello World", function(response) {
 
 ***
 
-\
-
-
 ## Static Methods
 
 ### onConnected(workerId, success)
@@ -151,9 +142,6 @@ SocketIO.onReceived(workerId, strData);
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

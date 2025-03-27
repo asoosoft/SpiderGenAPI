@@ -6,9 +6,6 @@
 >
 > 이 클래스는 브라우저의 `history.pushState` 및 `popstate` 이벤트를 활용하여 네비게이션 히스토리를 관리.
 
-\
-
-
 ## Properties
 
 ### targets `<Object>`
@@ -89,9 +86,6 @@ whm.setHistoryTarget('tabview', this.tabView);
 whm.pushHistory({target:'tabview', data1: 'data1' }; //...
 ```
 
-\
-
-
 ### pushHistory( data, title )
 
 히스토리를 등록.
@@ -105,9 +99,6 @@ whm.pushHistory({target:'tabview', data1: 'data1' }; //...
 whm.pushHistory({ target: 'tabview', id: 'page1' }, 'Page 1');
 ```
 
-\
-
-
 ### popHistory()
 
 히스토리 뒤로가기를 수행
@@ -115,5 +106,3 @@ whm.pushHistory({ target: 'tabview', id: 'page1' }, 'Page 1');
 ```js
 whm.popHistory()
 ```
-
-\

@@ -1,4 +1,4 @@
-# WebsocketIO( listener, isSSL )
+# WebsocketIO
 
 > **Extends** NetworkIO
 
@@ -8,9 +8,6 @@ _**데이터 송수신**_ 을 관리하며, 연결 상태를 유지하기 위한
 
 * **listener**`<Object>` 데이터 수신시 호출받을 이벤트 리스너
 * **isSSL** `<Boolean>` 전송 계층 보안 여부
-
-\
-
 
 ## Instance Methods
 
@@ -25,9 +22,6 @@ const qm = new QueryManager('sample');
 const netIo = new WebsocketIO(qm, false);
 if(netIo.isStart()) return;
 ```
-
-\
-
 
 ### sendData( data, callback )
 
@@ -47,9 +41,6 @@ const callback = function(result){
 netIo.sendData(data, callback);
 ```
 
-\
-
-
 ### setProtocols( protocols )
 
 서브 프로토콜을 지정.
@@ -60,9 +51,6 @@ netIo.sendData(data, callback);
 const netIo = new WebsocketIO(null, false);
 netIo.setProtocols(['protocol1', 'protocol2']);
 ```
-
-\
-
 
 ### setHeartbeat( delay )
 
@@ -90,9 +78,6 @@ const netIo = new WebsocketIO(qm, false);
 netIo.startIO('127.0.0.1', 80);
 ```
 
-\
-
-
 ### stopIO( isClosed )
 
 웹소켓 네트워크 연결을 해제
@@ -106,5 +91,3 @@ const qm = new QueryManager('sample');
 const netIo = new WebsocketIO(qm, false);
 netIo.stopIO();
 ```
-
-\

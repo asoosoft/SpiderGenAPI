@@ -1,6 +1,6 @@
 # MdQueryManager
 
-MdQueryManager 클래스는 [QueryManager](https://wikidocs.net/275527) 클래스를 확장하여, 쿼리 처리 및 데이터 송수신에 관련된 기능을 제공
+MdQueryManager 클래스는 [QueryManager](querymanager.md) 클래스를 확장하여, 쿼리 처리 및 데이터 송수신에 관련된 기능을 제공
 
 이 클래스는 주로 데이터 헤더 처리, 쿼리 연결 및 수신 데이터를 처리하는 데 사용
 
@@ -31,9 +31,6 @@ this.headerInfo = {
 
 ***
 
-\
-
-
 ## Instance Methods
 
 ### constructor(name)
@@ -56,14 +53,11 @@ let mdQueryManager = new MdQueryManager('myQuery');
 
 headerInfo 객체를 전달하여, 쿼리의 헤더 정보를 초기화하거나 업데이트할 수 있음
 
-*   **headerInfo** `<Object>`\
+*   **headerInfo** `<Object>`\\
 
+    쿼리의 헤더 정보를 담고 있는 객체\\
 
-    쿼리의 헤더 정보를 담고 있는 객체\
-
-
-    전달된 headerInfo에 의해 클래스의 headerInfo 속성이 업데이트\
-
+    전달된 headerInfo에 의해 클래스의 headerInfo 속성이 업데이트\\
 
     만약 null이 전달되면 기본값으로 초기화
 
@@ -82,8 +76,7 @@ mdQueryManager.setHeaderInfo({
 
 이를 통해, 브라우저 및 운영체제의 종류와 버전 정보를 수집
 
-*   **Returns** `<Array>`: \[os, osVer, browser, browserVer] 형식의 배열로 브라우저와 OS 정보를 반환\
-
+*   **Returns** `<Array>`: \[os, osVer, browser, browserVer] 형식의 배열로 브라우저와 OS 정보를 반환\\
 
     > 배열의 순서는 \[OS, OS 버전, 브라우저, 브라우저 버전]
 

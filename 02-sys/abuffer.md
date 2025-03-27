@@ -1,4 +1,4 @@
-# ABuffer( size )
+# ABuffer
 
 네트워크 통신이나 데이터 처리에서 사용되는 버퍼를 관리하는 역할
 
@@ -47,9 +47,6 @@ VAL32 값 상수로 지정
 > 기본값 **0x100000000**
 
 ***
-
-\
-
 
 ## Instance Variables
 
@@ -108,9 +105,6 @@ setCharset 함수에서 생성된 인코딩 객체
 set\~ 계열 함수가 호출되면 세팅 된 데이터의 마지막 위치의 다음을 가리킴
 
 ***
-
-\
-
 
 ## Instance Methods
 
@@ -306,8 +300,7 @@ buf.getShort(2); //-4095
 
 ### copyBuffer( fromBuf, offset )
 
-지정한 fromBuf의 데이터를 현재 버퍼(this.buf)의 offset 위치부터 복사\
-
+지정한 fromBuf의 데이터를 현재 버퍼(this.buf)의 offset 위치부터 복사\\
 
 > 이 메서드를 사용하면 기존 데이터를 유지하면서 특정 위치에 새로운 데이터를 덮어쓸 수 있음
 
@@ -966,8 +959,7 @@ buf.printBuffer(0, null, 16); //"30 60 90 c0 f0 "
 
 ### setBufferByString( str )
 
-문자열을 현재 버퍼(this.buf)에 인코딩하여 저장\
-
+문자열을 현재 버퍼(this.buf)에 인코딩하여 저장
 
 > 이 함수는 setCharset()이 설정되어 있어야 정상적으로 동작\
 > ⚠️ setCharset()이 호출되지 않으면 인코딩 오류가 발생할 수 있음
@@ -1254,5 +1246,3 @@ offset부터 size 만큼의 Uint8Array 를 base64 encoding 한 값을 얻음.
 * **size** `<Number>`: 길이
 
 ***
-
-\

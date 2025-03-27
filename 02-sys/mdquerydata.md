@@ -1,6 +1,6 @@
 # MdQueryData
 
-MdQueryData 클래스는 [AQueryData](https://wikidocs.net/275155) 클래스를 확장하여, 특정 데이터 쿼리를 처리하고, 해당 쿼리 데이터의 변환 및 관리 기능을 제공
+MdQueryData 클래스는 [AQueryData](aquerydata.md) 클래스를 확장하여, 특정 데이터 쿼리를 처리하고, 해당 쿼리 데이터의 변환 및 관리 기능을 제공
 
 이 클래스는 주로 **InBlock**과 **OutBlock** 데이터의 버퍼 처리 및 발생 횟수 계산을 담당
 
@@ -18,9 +18,6 @@ this.queryObj = {
 ```
 
 ***
-
-\
-
 
 ## Instance Methods
 

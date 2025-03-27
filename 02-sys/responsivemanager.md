@@ -23,8 +23,7 @@ ResponsiveManager.loadMap();
 주어진 URL과 모드에 해당하는 반응형 레이아웃 파일이 존재하는지 확인
 
 * **url** `<String>`: 확인할 URL 경로
-*   **mode** `<String>`: 레이아웃 모드\
-
+*   **mode** `<String>`: 레이아웃 모드
 
     > 예 ) 'desktop', 'mobile' 등
 * **Returns** `<Boolean>`\
@@ -35,9 +34,6 @@ let fileExists = ResponsiveManager.isExistFile('home.html', 'mobile');
 ```
 
 ***
-
-\
-
 
 ## Example Usage
 

@@ -8,9 +8,6 @@
 >
 > 또한, 전송 실패 시 콜백 함수를 제공하여 오류 처리 가능.
 
-\
-
-
 ## Properties
 
 ### url `<String>`
@@ -37,9 +34,6 @@ if(netIo.isStart()) {
 	console.log('네트워크 연결됨!!')
 }
 ```
-
-\
-
 
 ### sendData( data, callback )
 
@@ -93,9 +87,6 @@ netIo.sendString('{"message": "Hello"}', function(result) {
 });
 ```
 
-\
-
-
 ### startIO( url )
 
 네트워크 전송을 위한 URL을 설정하고, 네트워크 연결을 시작.
@@ -108,9 +99,6 @@ let netIo = new HttpIO(qm);
 
 netIo.startIO('http://127.0.0.1/sample.jsp');
 ```
-
-\
-
 
 ### stopIO()
 
