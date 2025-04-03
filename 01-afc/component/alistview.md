@@ -221,6 +221,24 @@ listView.insertItem("template/item.html", [{ name: "Item1" }], null, false, 50);
 listView.addItem("template/item.html", [{ name: "Item1" }], false, 50);
 ```
 
+#### addItems(urlArr, dataArr, isPrepend, itemHeight)
+
+여러개의 아이템을 한 번에 추가.
+
+* **urlArr** `<Array>` 추가할 뷰의 URL을 담고 있는 배열. 각 URL은 리스트뷰에 추가될 뷰 리소스를 가리킴.
+* **dataArr** `<Array>` 각 URL과 매핑될 데이터 객체를 담고 있는 배열. urlArr의 각 URL과 1:1로 매칭.
+* **isPrepend** `<Boolean>` 아이템을 리스트뷰의 맨 앞에 추가할지 여부를 결정. true이면 맨 앞에 추가하고, false이면 맨 뒤에 추가.
+* **itemHeight** `<Number>` 각 아이템의 높이를 지정. 이 값이 지정되면 각 아이템의 높이가 해당 값으로 설정.
+
+```js
+listView.addItems(
+  ["template/item1.html", "template/item2.html"],
+  [{ name: "Item1" }, { name: "Item2" }],
+  false,
+  50
+);
+```
+
 ### getItems()
 
 리스트뷰의 모든 아이템을 가져옴.
