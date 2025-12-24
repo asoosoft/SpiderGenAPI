@@ -41,7 +41,7 @@ Accordion의 아이템이 닫힌 상태의 화살표의 css 스타일을 정의�
 * **index** `<Number>` : 아이템의 인덱스
 
 ```javascript
- let item = aaccordion.getItemByIndex(0);  // test
+ let item = aaccordion.getItemByIndex(0);  // test22222
 ```
 
 ### getItemByName ( name )
