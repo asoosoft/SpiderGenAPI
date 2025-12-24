@@ -8,12 +8,13 @@
 
 ### downcss `<Object>`
 
-Accordion의 아이템이 열린상태의 화살표의 css 스타일을 정의하는 객체.\
+Accordion의 아이템이 열린상태의 화살표의 css 스타일을 정의하는 객체.
+
 아이템이 확장되었을 때의 화살표 모양을 커스터마이징 가능.
 
 ### menuHeight `<Number>`
 
-Accordion의 상단 메뉴 영역의 높이를 가지고 있는 변수.<테스트수정>
+Accordion의 상단 메뉴 영역의 높이를 가지고 있는 변수.
 
 ### paddingX `<Number>`
 
@@ -40,7 +41,7 @@ Accordion의 아이템이 닫힌 상태의 화살표의 css 스타일을 정의�
 * **index** `<Number>` : 아이템의 인덱스
 
 ```javascript
- let item = aaccordion.getItemByIndex(0);  
+ let item = aaccordion.getItemByIndex(0);  // test
 ```
 
 ### getItemByName ( name )
