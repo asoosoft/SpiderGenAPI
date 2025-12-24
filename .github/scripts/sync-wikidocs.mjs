@@ -103,7 +103,8 @@ async function main() {
     const md = fs.readFileSync(file, "utf-8");
     const subject = inferSubject(file, md);
     const wikiPath = inferWikidocsPath(file, subject);
-
+    const pageId = index.get(wikiPath);
+    
     const pageObj = findPageById(pages, pageId);
 
     if (!pageObj) {
