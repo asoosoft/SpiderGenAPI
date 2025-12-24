@@ -65,6 +65,17 @@ function inferWikidocsPath(filePath, subject) {
   return [...folderParts, subject].join("/");
 }
 
+// 트리에서 page 객체 찾는 함수
+function findPageById(pages, targetId) {
+  const stack = [...pages];
+  while (stack.length) {
+    const node = stack.pop();
+    if (node.id === targetId) return node;
+    if (node.children?.length) stack.push(...node.children);
+  }
+  return null;
+}
+
 // books/{id} 응답의 pages 트리를 경로 -> id 로 인덱싱
 function buildIndex(pages) {
   const index = new Map();
@@ -93,24 +104,42 @@ async function main() {
     const subject = inferSubject(file, md);
     const wikiPath = inferWikidocsPath(file, subject);
 
-    const pageId = index.get(wikiPath);
+    const pageObj = findPageById(pages, pageId);
 
-    if (!pageId) {
-      console.log(`[SKIP] not found in WikiDocs tree: ${wikiPath} (from ${file})`);
+    if (!pageObj) {
+      console.log(`[SKIP] page object not found for id=${pageId} (from ${file})`);
       continue;
     }
 
-    console.log(`[SYNC] ${file} -> ${wikiPath} -> page ${pageId}`);
-
-    // PUT payload는 구조(subject/content/book_id)로 맞춤
-    await apiPut(`${BASE_URL}/pages/${pageId}`, {
+    const payload = {
       data: {
-        id: pageId,
-        book_id: BOOK_ID,
+        // 기존 페이지 메타 그대로 유지
+        id: pageObj.id,
+        book_id: pageObj.book_id,
+        parent_id: pageObj.parent_id,
+        seq: pageObj.seq,
+        depth: pageObj.depth,
+        open_yn: pageObj.open_yn,
+
+        // 바뀌는 부분만 덮어쓰기
         subject,
         content: md,
-      }
+      },
+    };
+
+    // 디버그
+    console.log("PUT payload:", {
+      id: payload.data.id,
+      book_id: payload.data.book_id,
+      parent_id: payload.data.parent_id,
+      seq: payload.data.seq,
+      depth: payload.data.depth,
+      open_yn: payload.data.open_yn,
+      subject: payload.data.subject,
+      content_len: payload.data.content?.length,
     });
+
+    await apiPut(`${BASE_URL}/pages/${pageId}`, payload);
   }
 
   console.log("Done.");
