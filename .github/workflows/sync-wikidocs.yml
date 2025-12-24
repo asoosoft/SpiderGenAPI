@@ -1,0 +1,30 @@
+name: Sync WikiDocs from GitHub
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "**/*.md"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed markdown files
+        id: diff
+        run: |
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '*.md' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Sync to WikiDocs
+        env:
+          WIKIDOCS_TOKEN: ${{ secrets.WIKIDOCS_TOKEN }}
+          WIKIDOCS_BOOK_ID: ${{ secrets.WIKIDOCS_BOOK_ID }}
+          CHANGED_FILES: ${{ steps.diff.outputs.files }}
+        run: |
+          node .github/scripts/sync-wikidocs.mjs
