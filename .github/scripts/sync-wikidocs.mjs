@@ -112,35 +112,16 @@ async function main() {
       continue;
     }
 
-    const payload = {
-      data: {
-        // 기존 페이지 메타 그대로 유지
-        id: pageObj.id,
-        book_id: pageObj.book_id,
-        parent_id: pageObj.parent_id,
-        seq: pageObj.seq,
-        depth: pageObj.depth,
-        open_yn: pageObj.open_yn,
-
-        // 바뀌는 부분만 덮어쓰기
-        subject,
-        content: md,
-      },
-    };
-
-    // 디버그
-    console.log("PUT payload:", {
-      id: payload.data.id,
-      book_id: payload.data.book_id,
-      parent_id: payload.data.parent_id,
-      seq: payload.data.seq,
-      depth: payload.data.depth,
-      open_yn: payload.data.open_yn,
-      subject: payload.data.subject,
-      content_len: payload.data.content?.length,
+    await apiPut(`${BASE_URL}/pages/${pageId}`, {
+      id: pageObj.id,
+      subject,
+      content: md,
+      parent_id: pageObj.parent_id,
+      depth: pageObj.depth,
+      seq: pageObj.seq,
+      book_id: pageObj.book_id,
+      open_yn: pageObj.open_yn,
     });
-
-    await apiPut(`${BASE_URL}/pages/${pageId}`, payload);
   }
 
   console.log("Done.");
