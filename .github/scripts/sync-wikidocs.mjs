@@ -104,9 +104,12 @@ async function main() {
 
     // PUT payload는 구조(subject/content/book_id)로 맞춤
     await apiPut(`${BASE_URL}/pages/${pageId}`, {
-      book_id: BOOK_ID,
-      subject,
-      content: md,
+      data: {
+        id: pageId,
+        book_id: BOOK_ID,
+        subject,
+        content: md,
+      }
     });
   }
 
