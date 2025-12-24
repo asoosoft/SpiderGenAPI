@@ -42,6 +42,14 @@ function inferSubject(filePath, md) {
   return (m?.[1]?.trim()) || path.basename(filePath, ".md");
 }
 
+function normalizeFolderName(name) {
+  // 예: "01-afc" -> "01. afc"
+  // 규칙: "숫자2자리-나머지" 패턴이면 "숫자. 공백+나머지"로 변환
+  const m = name.match(/^(\d+)-(.+)$/);
+  if (m) return `${m[1]}. ${m[2]}`;
+  return name;
+}
+
 // GitHub 파일 경로 -> WikiDocs 트리 경로 문자열 생성
 // 예) docs/01. afc/component/AAccordion.md -> "01. afc/component/AAccordion"
 function inferWikidocsPath(filePath, subject) {
@@ -51,7 +59,7 @@ function inferWikidocsPath(filePath, subject) {
   const withoutRoot = (parts[0] === "docs") ? parts.slice(1) : parts;
 
   // 마지막은 파일명이므로 제외하고 폴더들만
-  const folderParts = withoutRoot.slice(0, -1);
+  const folderParts = withoutRoot.slice(0, -1).map(normalizeFolderName);
 
   // leaf는 subject(제목)로 맞춘다 (파일명 아니라 제목)
   return [...folderParts, subject].join("/");
