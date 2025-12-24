@@ -13,7 +13,7 @@ Accordion의 아이템이 열린상태의 화살표의 css 스타일을 정의�
 
 ### menuHeight `<Number>`
 
-Accordion의 상단 메뉴 영역의 높이를 가지고 있는 변수.<테스트수정정>
+Accordion의 상단 메뉴 영역의 높이를 가지고 있는 변수.<테스트수정>
 
 ### paddingX `<Number>`
 
